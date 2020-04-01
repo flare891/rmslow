@@ -27,9 +27,9 @@ import java.util.Set;
 // Does this processor require input?
 @InputRequirement(InputRequirement.Requirement.INPUT_ALLOWED)
 // Attributes this processor will read
-@ReadsAttributes({@ReadsAttribute(attribute = "", description = "")})
+@ReadsAttributes({@ReadsAttribute(attribute = "testerPassThrough", description = "Is the user a tester and should be passed through")})
 // Attributes this processor will set
-@WritesAttributes({@WritesAttribute(attribute = "", description = "")})
+@WritesAttributes({@WritesAttribute(attribute = "testerPassThrough", description = "Is the user a tester and should be passed through")})
 public class JsonDecisionProcessor extends AbstractRmsProcessor {
 
     private static final ObjectMapper mapper = new ObjectMapper();
@@ -79,14 +79,13 @@ public class JsonDecisionProcessor extends AbstractRmsProcessor {
                 log.info(username + " is a tester and has the required flow attribute....wooo");
                 session.transfer(flowFile, REL_SUCCESS);
             } else {
-                log.info(username + " is a tester and does not have the required attribute");
+                log.info(username + " is a tester but does not have the required attribute, adding it now.");
                 session.putAttribute(flowFile, TESTER_PASS_THROUGH, "TRUE");
                 session.transfer(flowFile, REL_RETRY);
             }
         } else {
-            log.error("Unknown position: " + message.getPosition());
+            log.error("Unknown position: " + position);
             session.transfer(flowFile, REL_FAILURE);
-            return;
         }
     }
 }
