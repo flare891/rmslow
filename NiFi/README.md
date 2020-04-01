@@ -9,6 +9,11 @@
 4. Go to the /nifi-1.11.4/bin directory and start NiFi (On windows run the run-nifi.bat).
 5. Go to http://localhost:8080/nifi/ to view the local running NiFi server.
 
+# Building This Project
+1. Download maven from https://maven.apache.org/download.cgi
+2. Extract maven to a location of your choosing on your system and add that location to your PATH variable.
+3. 
+
 # Configuring NiFi for your system
 The "flow" that you see through the UI is coming from the flow.xml.gz located in the /conf directory of your local NiFi installation. 
 To start using the one I have created take the file from /flows directory and place it in your local NiFi server and then start it.
@@ -47,4 +52,3 @@ split, aggregated, and distributed to other endpoints, this information is all s
 # Processors
 * NiFi comes out of the box with tons of available processors to use. A list can be found in /nifi-1.11.4/docs/html/getting-started.html#what-processors-are-available
 * On top of what NiFi provides we can write custom processors to add to our Flows or extend what is already available.
-

@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83dbc854-af9b-43f5-8f00-5a4076b1ba87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/.plxarc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/classes/META-INF/DEPENDENCIES" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/classes/META-INF/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/classes/META-INF/NOTICE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/classes/META-INF/services/org.apache.nifi.processor.Processor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/classes/rms/processors/MyProcessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/maven-shared-archive-resources/META-INF/DEPENDENCIES" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/maven-shared-archive-resources/META-INF/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/maven-shared-archive-resources/META-INF/NOTICE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/test-classes/META-INF/DEPENDENCIES" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/test-classes/META-INF/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/test-classes/META-INF/NOTICE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +49,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/flows" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\adamp\Desktop\rmslow\NiFi\rms-custom-processors-processors\src\test\java\rms\processors" />
+      <recent name="C:\Users\adamp\Desktop\rmslow\NiFi\rms-custom-processors-processors\src\main\java\rms\processors" />
+      <recent name="C:\Users\adamp\Desktop\rmslow\NiFi" />
+      <recent name="C:\Users\adamp\Desktop\rmslow\NiFi\src\main\java" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\adamp\Desktop\rmslow\NiFi\flows" />
       <recent name="C:\Users\adamp\Desktop\rmslow\NiFi" />
@@ -64,5 +90,8 @@
       <updated>1585749594586</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
