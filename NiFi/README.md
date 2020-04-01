@@ -49,6 +49,8 @@ raw configuration values that NiFi decrypts in memory on startup.
 6. NiFi keeps a very granular level of detail about each piece of data that it ingests. As the data is processed through the system and is transformed, routed, 
 split, aggregated, and distributed to other endpoints, this information is all stored within NiFi’s Provenance Repository. 
     * **This is a huge auditing/security win**
+7. NiFi has a built in Drools rules engine processor
+    * https://dzone.com/articles/apache-nifi-with-rule-engine
     
 # Processors
 * NiFi comes out of the box with tons of available processors to use. A list can be found in /nifi-1.11.4/docs/html/getting-started.html#what-processors-are-available

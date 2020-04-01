@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83dbc854-af9b-43f5-8f00-5a4076b1ba87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors/src/main/java/rms/models/BasicJsonMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors/src/main/java/rms/processors/AbstractRmsProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors/src/main/java/rms/processors/json/JsonDecisionProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors/src/test/java/rms/processors/JsonDecisionProcessorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms-custom-processors-nar/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rms-custom-nar/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms-custom-processors-processors/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rms-custom-processors/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms-custom-processors-processors/src/main/java/rms/processors/MyProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms-custom-processors-processors/src/main/resources/META-INF/services/org.apache.nifi.processor.Processor" beforeDir="false" afterPath="$PROJECT_DIR$/rms-custom-processors/src/main/resources/META-INF/services/org.apache.nifi.processor.Processor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rms-custom-processors-processors/src/test/java/rms/processors/MyProcessorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms-custom-processors/src/test/java/rms/processors/JsonDecisionProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rms-custom-processors/src/test/java/rms/processors/JsonDecisionProcessorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +56,46 @@
       <recent name="C:\Users\adamp\Desktop\rmslow\NiFi" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.JsonDecisionProcessorTest.testTester">
+    <configuration name="JsonDecisionProcessorTest.testDeveloper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rms-custom-processors-processors" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rms.processors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rms.processors" />
+      <option name="MAIN_CLASS_NAME" value="rms.processors.JsonDecisionProcessorTest" />
+      <option name="METHOD_NAME" value="testDeveloper" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonDecisionProcessorTest.testTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rms-custom-processors-processors" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rms.processors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rms.processors" />
+      <option name="MAIN_CLASS_NAME" value="rms.processors.JsonDecisionProcessorTest" />
+      <option name="METHOD_NAME" value="testTester" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JsonDecisionProcessorTest.testTester" />
+        <item itemvalue="JUnit.JsonDecisionProcessorTest.testDeveloper" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -98,9 +125,40 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1070" y="454" key="#com.intellij.ide.util.MemberChooser" timestamp="1585777206518">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1070" y="454" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.349.1920.1080@0.0.2560.1400" timestamp="1585777206518" />
     <state x="979" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585770017581">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="979" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-1920.349.1920.1080@0.0.2560.1400" timestamp="1585770017581" />
+    <state width="2060" height="284" key="GridCell.Tab.0.bottom" timestamp="1585778127285">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2060" height="284" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.349.1920.1080@0.0.2560.1400" timestamp="1585778127285" />
+    <state width="2060" height="284" key="GridCell.Tab.0.center" timestamp="1585778127285">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2060" height="284" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.349.1920.1080@0.0.2560.1400" timestamp="1585778127285" />
+    <state width="2060" height="284" key="GridCell.Tab.0.left" timestamp="1585778127284">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2060" height="284" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.349.1920.1080@0.0.2560.1400" timestamp="1585778127284" />
+    <state width="2060" height="284" key="GridCell.Tab.0.right" timestamp="1585778127285">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2060" height="284" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.349.1920.1080@0.0.2560.1400" timestamp="1585778127285" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rms-custom-processors/src/main/java/rms/processors/json/JsonDecisionProcessor.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
