@@ -21,8 +21,14 @@
             "polyfills": "apps/s3/src/polyfills.ts",
             "tsConfig": "apps/s3/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/s3/src/favicon.ico", "apps/s3/src/assets"],
-            "styles": ["apps/s3/src/styles.scss"],
+            "assets": [
+              "apps/s3/src/favicon.ico",
+              "apps/s3/src/assets"
+            ],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "apps/s3/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -80,7 +86,10 @@
               "apps/s3/tsconfig.app.json",
               "apps/s3/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/s3/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/s3/**"
+            ]
           }
         },
         "test": {
@@ -115,9 +124,49 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/s3-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/s3-e2e/**"]
+            "tsConfig": [
+              "apps/s3-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/s3-e2e/**"
+            ]
           }
+        }
+      }
+    },
+    "core": {
+      "projectType": "library",
+      "root": "libs/core",
+      "sourceRoot": "libs/core/src",
+      "prefix": "rms-frontend",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/core/tsconfig.lib.json",
+              "libs/core/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/core/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/core/jest.config.js",
+            "tsConfig": "libs/core/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/core/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
         }
       }
     }
