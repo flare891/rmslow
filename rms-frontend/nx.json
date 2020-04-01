@@ -25,6 +25,9 @@
     "s3-e2e": {
       "tags": [],
       "implicitDependencies": ["s3"]
+    },
+    "core": {
+      "tags": []
     }
   }
 }
