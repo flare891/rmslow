@@ -2,32 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83dbc854-af9b-43f5-8f00-5a4076b1ba87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/.plxarc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/classes/META-INF/DEPENDENCIES" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/classes/META-INF/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/classes/META-INF/NOTICE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/classes/META-INF/services/org.apache.nifi.processor.Processor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/classes/rms/processors/MyProcessor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/maven-shared-archive-resources/META-INF/DEPENDENCIES" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/maven-shared-archive-resources/META-INF/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/maven-shared-archive-resources/META-INF/NOTICE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/test-classes/META-INF/DEPENDENCIES" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/test-classes/META-INF/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rms-custom-processors-processors/target/test-classes/META-INF/NOTICE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors/src/main/java/rms/models/BasicJsonMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors/src/main/java/rms/processors/AbstractRmsProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors/src/main/java/rms/processors/json/JsonDecisionProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rms-custom-processors/src/test/java/rms/processors/JsonDecisionProcessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms-custom-processors-nar/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rms-custom-nar/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms-custom-processors-processors/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rms-custom-processors/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms-custom-processors-processors/src/main/java/rms/processors/MyProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms-custom-processors-processors/src/main/resources/META-INF/services/org.apache.nifi.processor.Processor" beforeDir="false" afterPath="$PROJECT_DIR$/rms-custom-processors/src/main/resources/META-INF/services/org.apache.nifi.processor.Processor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rms-custom-processors-processors/src/test/java/rms/processors/MyProcessorTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -93,5 +96,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="979" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585770017581">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="979" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-1920.349.1920.1080@0.0.2560.1400" timestamp="1585770017581" />
   </component>
 </project>

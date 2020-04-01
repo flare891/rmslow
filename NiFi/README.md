@@ -12,7 +12,8 @@
 # Building This Project
 1. Download maven from https://maven.apache.org/download.cgi
 2. Extract maven to a location of your choosing on your system and add that location to your PATH variable.
-3. 
+3. From the top level directory of this project perform a "mvn clean install"
+4. Take the generated nar file from /rms-custom-nar/target/ and put it into your local NiFi server under /lib/
 
 # Configuring NiFi for your system
 The "flow" that you see through the UI is coming from the flow.xml.gz located in the /conf directory of your local NiFi installation. 
