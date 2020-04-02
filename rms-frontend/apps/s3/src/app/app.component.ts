@@ -23,13 +23,6 @@ export class AppComponent implements OnInit {
       folder.name = `Folder${i}`;
       folder.parent = 'root';
       initialFolders.push(folder);
-      // for (let i = 0; i < 10; i++) {
-      //   const file = new FileElement();
-      //   file.isFolder = false;
-      //   file.name = `File${i}`;
-      //   file.parent = `Folder${i}`;
-      //   initialFolders.push(file);
-      // }
     }
     initialFolders.forEach(element => {
       this.fileService.add(element);
@@ -86,6 +79,13 @@ export class AppComponent implements OnInit {
     this.updateFileElementQuery();
     this.currentPath = this.pushToPath(this.currentPath, element.name);
     this.canNavigateUp = true;
+  }
+
+  filesUploaded(files: FileElement[]) {
+    files.forEach(file => {
+      this.fileService.add(file);
+      this.updateFileElementQuery();
+    });
   }
 
   pushToPath(path: string, folderName: string) {

@@ -9,6 +9,7 @@ import { FileExplorerComponent } from './file-explorer/file-explorer.component';
 import { NewFolderModalComponent } from './new-folder-modal/new-folder-modal.component';
 import { RenameModalComponent } from './rename-modal/rename-modal.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxFileDropModule } from 'ngx-file-drop';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CoreModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxFileDropModule,
     NgxsModule.forRoot([]),
     NgxsReduxDevtoolsPluginModule.forRoot()
   ],
