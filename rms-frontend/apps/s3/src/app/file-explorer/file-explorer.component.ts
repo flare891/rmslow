@@ -41,6 +41,8 @@ export class FileExplorerComponent {
   navigate(element: FileElement) {
     if (element.isFolder) {
       this.navigatedDown.emit(element);
+    } else {
+      alert(`You clicked ${element.name}`);
     }
   }
 
@@ -78,6 +80,7 @@ export class FileExplorerComponent {
   }
   openMenu(event: MouseEvent, element: FileElement, viewChild: MatMenuTrigger) {
     event.preventDefault();
+    console.log('here');
     viewChild.openMenu();
   }
 
@@ -90,7 +93,6 @@ export class FileExplorerComponent {
       fileElem.actualFile = file;
       fileElem.isFolder = false;
       fileElem.name = file.name;
-      fileElem.parent = this.path || 'root';
       fileArray.push(fileElem);
     }
     this.filesUploaded.emit(fileArray);

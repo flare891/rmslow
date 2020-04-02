@@ -83,6 +83,7 @@ export class AppComponent implements OnInit {
 
   filesUploaded(files: FileElement[]) {
     files.forEach(file => {
+      file.parent = this.currentRoot?.id || 'root';
       this.fileService.add(file);
       this.updateFileElementQuery();
     });

@@ -36,13 +36,11 @@
             [matMenuTriggerData]="{ element: element }"
             #menuTrigger="matMenuTrigger"
           >
-            <mat-icon>menu</mat-icon>
           </span>
           <div
-            fxLayout="column"
-            fxLayoutAlign="space-between center"
+            style="display: flex; align-content: space-between; flex-direction: column;"
             (click)="navigate(element)"
-            (contextmenu)="openMenu($event, menuTrigger)"
+            (contextmenu)="menuTrigger.openMenu(); $event.preventDefault()"
           >
             <mat-icon
               color="primary"
