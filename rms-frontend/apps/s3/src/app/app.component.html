@@ -3,7 +3,7 @@
     style="height: 100%; width: 100%; box-sizing: border-box; padding:0"
   >
     <s3-file-explorer
-      [fileElements]="fileElements | async"
+      [fileElements]="files$ | async"
       [path]="currentPath"
       [canNavigateUp]="canNavigateUp"
       (folderAdded)="addFolder($event)"

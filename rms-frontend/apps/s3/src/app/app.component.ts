@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FileElement } from './models/file-element';
 import { FileService } from './file-service.service';
+import { v4 } from 'uuid';
+import { ExplorerState } from './+state/file.state';
+import { Select, Store } from '@ngxs/store';
+import { AddFolder } from './+state/file.actions';
 
 @Component({
   selector: 's3-root',
@@ -15,6 +19,8 @@ export class AppComponent implements OnInit {
   currentPath: string;
   canNavigateUp = false;
 
+  @Select(state => state.explorer.files) files$: Observable<FileElement[]>;
+
   ngOnInit(): void {
     const initialFolders: FileElement[] = [];
     for (let i = 0; i < 10; i++) {
@@ -25,15 +31,17 @@ export class AppComponent implements OnInit {
       initialFolders.push(folder);
     }
     initialFolders.forEach(element => {
-      this.fileService.add(element);
+      this.store.dispatch(new AddFolder(element));
     });
+
     this.updateFileElementQuery();
   }
 
-  constructor(public fileService: FileService) {}
+  constructor(public fileService: FileService, public store: Store) {}
 
   addFolder(folder: { name: string }) {
     this.fileService.add({
+      id: v4(),
       isFolder: true,
       name: folder.name,
       parent: this.currentRoot ? this.currentRoot.id : 'root'
