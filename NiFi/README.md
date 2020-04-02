@@ -64,12 +64,12 @@ __*__ = This is a built in NiFi processor or we can rewrite for more control.
 1. Processor(s) to read from various SQS*
 2. Processor that creates standard RulesProcessor message from a source message by downloading the main message of the SQS message.
 3. Processor that either CALLS the RulesEngine WS for a rules decision **OR** uses Drools internally in NiFi to makes rules decisions
+    * https://github.com/alefbt/NiFi-Rule-engine-processor/blob/master/nifi-ruleengien-processor-processors/src/main/java/com/matrixbi/nifi/processor/RuleEngineProcessor.java
 4. Processor that takes rules output and routes to 1-n different processors*
 5. Processor that adds record to a MySQL table*
 6. Processor that adds original message to Dynamo table*
 7. Cron processor that sends SNS for disposition (Not sure we would need this in NiFi unless we want to build some type of workflow for disposition)
-8. Processor to handle responses from customers about where they disposition documents. (If they did write to database, if they didnt send notification to management)
-9. 
+8. Processor to handle responses from customers about where they disposition documents. (If they did write to database, if they didnt send notification to management) 
 
 # Best Practices
 * Move the default location of the following properties OUT of the NiFi directory and give it its **OWN** high I/O disk.
