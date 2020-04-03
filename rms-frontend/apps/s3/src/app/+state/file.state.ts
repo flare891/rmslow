@@ -39,7 +39,7 @@ export class ExplorerState {
   @Action(UploadFiles)
   uploadFiles(ctx: StateContext<ExplorerStateModel>, action: UploadFiles) {
     const state = ctx.getState();
-    const files = state.files;
+    const files = [...state.files];
     files.push(...action.files);
     ctx.patchState({
       files: files
