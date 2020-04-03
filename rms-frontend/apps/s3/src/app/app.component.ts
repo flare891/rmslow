@@ -1,16 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FileElement } from './models/file-element';
-import { FileService } from './file-service.service';
-import { v4 } from 'uuid';
-import { ExplorerState } from './+state/file.state';
 import { Select, Store } from '@ngxs/store';
-import { AddFolder } from './+state/file.actions';
+import { v4 } from 'uuid';
+import {
+  AddFolder,
+  DeleteFile,
+  DeleteFolder,
+  MoveFolder,
+  MoveFile,
+  RenameFolder,
+  UploadFiles,
+  NavigateTo,
+  NavigateUp
+} from './+state/file.actions';
+import { ExplorerState } from './+state/file.state';
 
 @Component({
   selector: 's3-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements OnInit {
   title = 's3';
@@ -19,7 +29,14 @@ export class AppComponent implements OnInit {
   currentPath: string;
   canNavigateUp = false;
 
-  @Select(state => state.explorer.files) files$: Observable<FileElement[]>;
+  @Select(ExplorerState.currentSpace) files$: Observable<FileElement[]>;
+
+  @Select(ExplorerState.currentRoot) root$: Observable<FileElement>;
+
+  rootSub = this.root$.subscribe(a => {
+    this.currentRoot = a;
+    this.canNavigateUp = !!a.parent;
+  });
 
   ngOnInit(): void {
     const initialFolders: FileElement[] = [];
@@ -28,76 +45,69 @@ export class AppComponent implements OnInit {
       folder.isFolder = true;
       folder.name = `Folder${i}`;
       folder.parent = 'root';
+      folder.id = v4();
       initialFolders.push(folder);
     }
     initialFolders.forEach(element => {
       this.store.dispatch(new AddFolder(element));
     });
-
-    this.updateFileElementQuery();
   }
 
-  constructor(public fileService: FileService, public store: Store) {}
+  constructor(public store: Store) {}
 
   addFolder(folder: { name: string }) {
-    this.fileService.add({
-      id: v4(),
-      isFolder: true,
-      name: folder.name,
-      parent: this.currentRoot ? this.currentRoot.id : 'root'
-    });
-    this.updateFileElementQuery();
-  }
-
-  removeElement(element: FileElement) {
-    this.fileService.delete(element.id);
-    this.updateFileElementQuery();
-  }
-
-  moveElement(event: { element: FileElement; moveTo: FileElement }) {
-    this.fileService.update(event.element.id, { parent: event.moveTo.id });
-    this.updateFileElementQuery();
-  }
-
-  renameElement(element: FileElement) {
-    this.fileService.update(element.id, { name: element.name });
-    this.updateFileElementQuery();
-  }
-
-  updateFileElementQuery() {
-    this.fileElements = this.fileService.queryInFolder(
-      this.currentRoot ? this.currentRoot.id : 'root'
+    this.store.dispatch(
+      new AddFolder({
+        id: v4(),
+        isFolder: true,
+        name: folder.name,
+        parent: this.currentRoot ? this.currentRoot.id : 'root'
+      })
     );
   }
 
+  removeElement(element: FileElement) {
+    if (element.isFolder) this.store.dispatch(new DeleteFolder(element.id));
+    else this.store.dispatch(new DeleteFile(element.id));
+  }
+
+  moveElement(event: { element: FileElement; moveTo: FileElement }) {
+    if (event.element.isFolder)
+      this.store.dispatch(new MoveFolder(event.element.id, event.moveTo.id));
+    else this.store.dispatch(new MoveFile(event.element.id, event.moveTo.id));
+  }
+
+  renameElement(element: FileElement) {
+    if (element.isFolder)
+      this.store.dispatch(new RenameFolder(element.id, element.name));
+    else this.store.dispatch(new RenameFolder(element.id, element.name));
+  }
+
   navigateUp() {
-    if (this.currentRoot && this.currentRoot.parent === 'root') {
-      this.currentRoot = null;
-      this.canNavigateUp = false;
-      this.updateFileElementQuery();
-    } else {
-      this.currentRoot = this.fileService.get(this.currentRoot.parent);
-      this.updateFileElementQuery();
-    }
-    this.currentPath = this.popFromPath(this.currentPath);
+    this.store.dispatch(new NavigateUp());
+    this.currentPath = this.popFromPath(this.currentPath) || 'Files';
   }
 
   navigateToFolder(element: FileElement) {
-    this.currentRoot = element;
-    this.updateFileElementQuery();
+    this.store.dispatch(new NavigateTo(element));
     this.currentPath = this.pushToPath(this.currentPath, element.name);
     this.canNavigateUp = true;
   }
 
   filesUploaded(files: FileElement[]) {
-    files.forEach(file => {
-      file.parent = this.currentRoot?.id || 'root';
-      this.fileService.add(file);
-      this.updateFileElementQuery();
-    });
+    this.store.dispatch(
+      new UploadFiles(
+        files.map(file => {
+          file.id = v4();
+          file.parent = this.currentRoot?.id || 'root';
+          return file;
+        })
+      )
+    );
   }
 
   pushToPath(path: string, folderName: string) {
+    if (path === 'Files') path = '';
     let p = path ? path : '';
     p += `${folderName}/`;
     return p;

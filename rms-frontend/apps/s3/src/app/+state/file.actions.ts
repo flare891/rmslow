@@ -39,3 +39,13 @@ export class MoveFile {
   static readonly type = '[Explorer] Move File';
   constructor(public id: string, public parent: string) {}
 }
+
+export class NavigateTo {
+  static readonly type = '[Explorer] Navigate To';
+  constructor(public folder: FileElement) {}
+}
+
+export class NavigateUp {
+  static readonly type = '[Explorer] Navigate Up';
+  constructor() {}
+}

@@ -8,20 +8,34 @@ import {
   RenameFile,
   RenameFolder,
   MoveFolder,
-  MoveFile
+  MoveFile,
+  NavigateTo,
+  NavigateUp
 } from './file.actions';
 
 export interface ExplorerStateModel {
   files: FileElement[];
+  currentRoot: FileElement;
 }
 
 @State<ExplorerStateModel>({
   name: 'explorer',
   defaults: {
-    files: []
+    files: [],
+    currentRoot: { id: 'root', name: 'Files', isFolder: true, parent: '' }
   }
 })
 export class ExplorerState {
+  @Selector()
+  static currentSpace(state: ExplorerStateModel) {
+    return state.files.filter(file => file.parent === state.currentRoot.id);
+  }
+
+  @Selector()
+  static currentRoot(state: ExplorerStateModel) {
+    return state.currentRoot;
+  }
+
   @Action(UploadFiles)
   uploadFiles(ctx: StateContext<ExplorerStateModel>, action: UploadFiles) {
     const state = ctx.getState();
@@ -59,8 +73,9 @@ export class ExplorerState {
   deleteFile(ctx: StateContext<ExplorerStateModel>, action: DeleteFile) {
     const state = ctx.getState();
     const files = state.files;
+    const filteredFiles = files.filter(entry => entry.id != action.id);
     ctx.patchState({
-      files: files.filter(entry => entry.id != action.id)
+      files: filteredFiles
     });
     //Add code to send files to server here
   }
@@ -105,6 +120,30 @@ export class ExplorerState {
     files.find(file => file.id === action.id).parent = action.parent;
     ctx.patchState({
       files: files
+    });
+    //Add code to send files to server here
+  }
+
+  @Action(NavigateTo)
+  navigateTo(ctx: StateContext<ExplorerStateModel>, action: NavigateTo) {
+    ctx.patchState({
+      currentRoot: action.folder
+    });
+    //Add code to send files to server here
+  }
+
+  @Action(NavigateUp)
+  navigateUp(ctx: StateContext<ExplorerStateModel>, action: NavigateUp) {
+    const state = ctx.getState();
+    const files = state.files;
+    const newRoot = files.find(a => a.id === state.currentRoot.parent) || {
+      id: 'root',
+      name: 'Files',
+      isFolder: true,
+      parent: ''
+    };
+    ctx.patchState({
+      currentRoot: newRoot
     });
     //Add code to send files to server here
   }
