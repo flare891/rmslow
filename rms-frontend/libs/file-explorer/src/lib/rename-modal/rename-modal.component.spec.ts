@@ -8,9 +8,8 @@ describe('RenameModalComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RenameModalComponent ]
-    })
-    .compileComponents();
+      declarations: [RenameModalComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

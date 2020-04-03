@@ -1,6 +1,5 @@
 import {
   Component,
-  OnInit,
   Input,
   Output,
   EventEmitter,
@@ -18,7 +17,7 @@ import {
 } from 'ngx-file-drop';
 
 @Component({
-  selector: 's3-file-explorer',
+  selector: 'rms-file-explorer',
   templateUrl: './file-explorer.component.html',
   styleUrls: ['./file-explorer.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush

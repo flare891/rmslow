@@ -8,9 +8,8 @@ describe('NewFolderModalComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NewFolderModalComponent ]
-    })
-    .compileComponents();
+      declarations: [NewFolderModalComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -1,5 +1,5 @@
 import { State, Action, StateContext, Selector } from '@ngxs/store';
-import { FileElement } from '../models/file-element';
+import { FileElement } from '@rms-frontend/file-explorer';
 import {
   UploadFiles,
   AddFolder,

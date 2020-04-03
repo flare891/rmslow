@@ -128,7 +128,7 @@
       "projectType": "library",
       "root": "libs/core",
       "sourceRoot": "libs/core/src",
-      "prefix": "rms-frontend",
+      "prefix": "rms",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -147,6 +147,38 @@
             "tsConfig": "libs/core/tsconfig.spec.json",
             "passWithNoTests": true,
             "setupFile": "libs/core/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "file-explorer": {
+      "projectType": "library",
+      "root": "libs/file-explorer",
+      "sourceRoot": "libs/file-explorer/src",
+      "prefix": "rms-frontend",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/file-explorer/tsconfig.lib.json",
+              "libs/file-explorer/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/file-explorer/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/file-explorer/jest.config.js",
+            "tsConfig": "libs/file-explorer/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/file-explorer/src/test-setup.ts"
           }
         }
       },

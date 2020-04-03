@@ -1,6 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Observable } from 'rxjs';
-import { FileElement } from './models/file-element';
+import { FileElement } from '@rms-frontend/file-explorer';
 import { Select, Store } from '@ngxs/store';
 import { v4 } from 'uuid';
 import {

@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "lib": "nx g @nrwl/angular:lib",
     "ng": "ng",
     "nx": "nx",
     "start": "ng serve",

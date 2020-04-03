@@ -1,4 +1,4 @@
-import { FileElement } from '../models/file-element';
+import { FileElement } from '@rms-frontend/file-explorer';
 
 export class UploadFiles {
   static readonly type = '[Explorer] Upload Files';
