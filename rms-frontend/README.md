@@ -75,11 +75,11 @@ Angular Material is the first party component library for Angular application. V
 
 ## Application/Library structure
 
-Anything that can be put in libs, should be put in libs. For the most part anything in libs should handle state by itself, mostly with just inputs and outputs, possible exceptions will be forms, logger, and user services. Everythign should be made with smart and dumb components. Smart components are attached to state and should not have much if any visual parts. They should be containers for dumb components. This keeps our dumb components as reusable as possible. Dumb components should not rely on services and should take in and emit values. Example of a smart component is the [S3 app](https://github.com/RMSLowside/rmslow/tree/master/rms-frontend/apps/s3/src/app) The app.component handles all of the business logic and state, but leaves all the view portions to the [File Explorer lib](https://github.com/RMSLowside/rmslow/tree/master/rms-frontend/libs/file-explorer).
+Anything that can be put in libs, should be put in libs. For the most part anything in libs should handle state by itself, mostly with just inputs and outputs, possible exceptions will be forms, logger, and user services. Everything should be made with smart and dumb components. Smart components are attached to state and should not have much if any visual parts. They should be containers for dumb components. This keeps our dumb components as reusable as possible. Dumb components should not rely on services and should take in and emit values. Example of a smart component is the [S3 app](https://github.com/RMSLowside/rmslow/tree/master/rms-frontend/apps/s3/src/app) The app.component handles all of the business logic and state, but leaves all the view portions to the [File Explorer lib](https://github.com/RMSLowside/rmslow/tree/master/rms-frontend/libs/file-explorer).
 
 ## NGXS
 
-This project uses NGXS for state management. NGXS is a redux based state management library. Some benefits of a redux based solution is that it provides an immutable single source of truth for state. THis makes debugging actions much easier and consistent. To ensure immutability we are leveraging Immer and the NGXS Immer plugin. Visit [NGXS Documentation](https://www.ngxs.io/) for more information.
+This project uses NGXS for state management. NGXS is a redux based state management library. A major benefit of a redux based solution is that it provides an immutable single source of truth for state. This makes debugging actions much easier and consistent. To ensure immutability we are leveraging Immer and the NGXS Immer plugin. Visit [NGXS Documentation](https://www.ngxs.io/) for more information.
 
 ## Testing
 
