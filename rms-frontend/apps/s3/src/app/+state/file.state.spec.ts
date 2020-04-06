@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { Store, NgxsModule } from '@ngxs/store';
 import { ExplorerState } from './file.state';
 import { FileElement } from '@rms-frontend/file-explorer';
-import { UploadFiles, AddFolder } from './file.actions';
+import { UploadFiles, AddFolder, DeleteFolder } from './file.actions';
 import { StateReset } from 'ngxs-reset-plugin';
 
 export const DEFAULT_STATE = {
@@ -46,10 +46,23 @@ describe('Explorer', () => {
     folder.name = `Folder`;
     folder.parent = 'root';
     folder.id = '1';
-    const empty = [...store.selectSnapshot(state => state.explorer.files)];
+    const empty = store.selectSnapshot(state => state.explorer.files);
     expect(empty).toEqual([]);
     store.dispatch(new AddFolder(folder));
-    const oneFolder = [...store.selectSnapshot(state => state.explorer.files)];
+    const oneFolder = store.selectSnapshot(state => state.explorer.files);
     expect(oneFolder).toEqual([folder]);
+  });
+  it('it adds a folder then Deletes a folders from state', () => {
+    const folder = new FileElement();
+    folder.isFolder = false;
+    folder.name = `Folder`;
+    folder.parent = 'root';
+    folder.id = '1';
+    store.dispatch(new AddFolder(folder));
+    const oneFolder = store.selectSnapshot(state => state.explorer.files);
+    expect(oneFolder).toEqual([folder]);
+    store.dispatch(new DeleteFolder('1'));
+    const empty = store.selectSnapshot(state => state.explorer.files);
+    expect(empty).toEqual([]);
   });
 });

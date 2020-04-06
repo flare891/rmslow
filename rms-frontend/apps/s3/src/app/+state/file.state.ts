@@ -50,7 +50,7 @@ export class ExplorerState {
   @Action(AddFolder)
   addFolder(ctx: StateContext<ExplorerStateModel>, action: AddFolder) {
     const state = ctx.getState();
-    const files = state.files;
+    const files = [...state.files];
     files.push(action.folder);
     ctx.patchState({
       files: files
