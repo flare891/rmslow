@@ -39,7 +39,10 @@
           </span>
           <div
             style="display: flex; align-content: space-between; flex-direction: column;"
-            (click)="navigate(element)"
+            [ngStyle]="{
+              'background-color': selected.includes(element) ? 'orange' : ''
+            }"
+            (click)="navigate(element, $event)"
             (contextmenu)="menuTrigger.openMenu(); $event.preventDefault()"
           >
             <mat-icon

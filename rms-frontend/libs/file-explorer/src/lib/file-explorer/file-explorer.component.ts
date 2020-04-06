@@ -26,6 +26,7 @@ export class FileExplorerComponent {
   constructor(public dialog: MatDialog) {}
 
   dragged: boolean;
+  selected: FileElement[] = [];
   @Input() fileElements: FileElement[];
   @Input() canNavigateUp: boolean;
   @Input() path: string;
@@ -45,11 +46,20 @@ export class FileExplorerComponent {
     this.elementRemoved.emit(element);
   }
 
-  navigate(element: FileElement) {
-    if (element.isFolder) {
-      this.navigatedDown.emit(element);
+  navigate(element: FileElement, event: MouseEvent) {
+    if (event.ctrlKey) {
+      const index = this.selected.indexOf(element);
+      if (index === -1) {
+        this.selected.push(element);
+      } else {
+        this.selected.splice(index, 1);
+      }
     } else {
-      alert(`You clicked ${element.name}`);
+      if (element.isFolder) {
+        this.navigatedDown.emit(element);
+      } else {
+        alert(`You clicked ${element.name}`);
+      }
     }
   }
 
