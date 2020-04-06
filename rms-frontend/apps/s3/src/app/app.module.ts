@@ -5,7 +5,6 @@ import { CoreModule } from '@rms-frontend/core';
 import { AppComponent } from './app.component';
 import { NgxsModule } from '@ngxs/store';
 import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
-import { NgxsResetPluginModule } from 'ngxs-reset-plugin';
 import { FileExplorerModule } from '@rms-frontend/file-explorer';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ExplorerState } from './+state/file.state';
@@ -18,7 +17,6 @@ import { ExplorerState } from './+state/file.state';
     FormsModule,
     ReactiveFormsModule,
     NgxsModule.forRoot([ExplorerState]),
-    NgxsResetPluginModule.forRoot(),
     NgxsReduxDevtoolsPluginModule.forRoot()
   ],
   providers: [],
