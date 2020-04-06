@@ -4,12 +4,12 @@
 All of our applications are built with the Angular Framework. Visit [Angular Documentation](https://angular.io/) for more information.
 
 ## Applications
-[S3](https://github.com/RMSLowside/rmslow/tree/master/rms-frontend/apps/s3) - An application used to wrap S3 in a more user friendly way. 
+* [S3](https://github.com/RMSLowside/rmslow/tree/master/rms-frontend/apps/s3) - An application used to wrap S3 in a more user friendly way. 
 
 ## Libraries
-[Core](https://github.com/RMSLowside/rmslow/tree/master/rms-frontend/libs/core) - Core library that has things that all applications and libs need, such as Angular Material.
+* [Core](https://github.com/RMSLowside/rmslow/tree/master/rms-frontend/libs/core) - Core library that has things that all applications and libs need, such as Angular Material.
 
-[File Explorer](https://github.com/RMSLowside/rmslow/tree/master/rms-frontend/libs/file-explorer) - A file explorer library that takes in a list of file elements and shows it on the screen. Currently used by the S3 application.
+* [File Explorer](https://github.com/RMSLowside/rmslow/tree/master/rms-frontend/libs/file-explorer) - A file explorer library that takes in a list of file elements and shows it on the screen. Currently used by the S3 application.
 
 ## Quick Start & Nx Documentation
 This project was generated using [Nx](https://nx.dev).
