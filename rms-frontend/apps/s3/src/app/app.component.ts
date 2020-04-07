@@ -95,6 +95,10 @@ export class AppComponent implements OnInit {
     this.canNavigateUp = true;
   }
 
+  fileSelected(file: FileElement) {
+    alert(`You clicked ${file.name}`);
+  }
+
   filesUploaded(files: FileElement[]) {
     this.store.dispatch(
       new UploadFiles(

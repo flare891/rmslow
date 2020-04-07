@@ -161,4 +161,17 @@ describe('AppComponent', () => {
     const path = app.popFromPath('first/second/');
     expect(path).toEqual('first/');
   });
+
+  it(`should`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    const alertSpy = jest.spyOn(window, 'alert').mockImplementation(() => {});
+    const file = new FileElement();
+    file.id = '1';
+    file.isFolder = false;
+    file.name = 'test';
+    file.parent = 'root';
+    app.fileSelected(file);
+    expect(alertSpy).toHaveBeenCalledWith(`You clicked ${file.name}`);
+  });
 });

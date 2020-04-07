@@ -27,7 +27,12 @@ export class FileExplorerComponent {
 
   dragged: boolean;
   selected: FileElement[] = [];
-  @Input() fileElements: FileElement[];
+  _fileElements: FileElement[] = [];
+  @Input('fileElements')
+  set fileElements(value: FileElement[]) {
+    this._fileElements = value;
+    this.selected = [];
+  }
   @Input() canNavigateUp: boolean;
   @Input() path: string;
 
@@ -40,25 +45,27 @@ export class FileExplorerComponent {
     moveTo: FileElement;
   }>();
   @Output() navigatedDown = new EventEmitter<FileElement>();
+  @Output() fileSelected = new EventEmitter<FileElement>();
   @Output() navigatedUp = new EventEmitter();
 
   deleteElement(element: FileElement) {
-    this.elementRemoved.emit(element);
+    if (this.selected.length) {
+      if (!this.selected.includes(element)) this.selected.push(element);
+      this.selected.forEach(elem => {
+        this.elementRemoved.emit(elem);
+      });
+    } else this.elementRemoved.emit(element);
   }
 
   navigate(element: FileElement, event: MouseEvent) {
     if (event.ctrlKey) {
-      const index = this.selected.indexOf(element);
-      if (index === -1) {
-        this.selected.push(element);
-      } else {
-        this.selected.splice(index, 1);
-      }
+      this.selected = this.toggleInArray(this.selected, element);
     } else {
+      this.selected = [];
       if (element.isFolder) {
         this.navigatedDown.emit(element);
       } else {
-        alert(`You clicked ${element.name}`);
+        this.fileSelected.emit(element);
       }
     }
   }
@@ -68,7 +75,12 @@ export class FileExplorerComponent {
   }
 
   moveElement(element: FileElement, moveTo: FileElement) {
-    this.elementMoved.emit({ element: element, moveTo: moveTo });
+    if (this.selected.length) {
+      if (!this.selected.includes(element)) this.selected.push(element);
+      this.selected.forEach(elem => {
+        this.elementMoved.emit({ element: elem, moveTo: moveTo });
+      });
+    } else this.elementMoved.emit({ element: element, moveTo: moveTo });
   }
 
   openNewFolderDialog() {
@@ -141,5 +153,15 @@ export class FileExplorerComponent {
 
   public fileLeave(event) {
     //Add any fileLeave code
+  }
+
+  private toggleInArray(array: any[], element: any) {
+    const index = array.indexOf(element);
+    if (index === -1) {
+      array.push(element);
+    } else {
+      array.splice(index, 1);
+    }
+    return array;
   }
 }
