@@ -4,7 +4,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CoreModule } from '@rms-frontend/core';
 import { FileExplorerModule, FileElement } from '@rms-frontend/file-explorer';
 import { NgxsModule, Store } from '@ngxs/store';
-import { ExplorerState } from './+state/file.state';
 import { of } from 'rxjs';
 
 describe('AppComponent', () => {
