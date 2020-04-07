@@ -4,7 +4,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CoreModule } from '@rms-frontend/core';
 import { FileExplorerModule, FileElement } from '@rms-frontend/file-explorer';
 import { NgxsModule, Store } from '@ngxs/store';
-import { ExplorerState } from './+state/file.state';
 import { of } from 'rxjs';
 
 describe('AppComponent', () => {
@@ -160,5 +159,18 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     const path = app.popFromPath('first/second/');
     expect(path).toEqual('first/');
+  });
+
+  it(`should alert the file clicked`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    const alertSpy = jest.spyOn(window, 'alert').mockImplementation(() => {});
+    const file = new FileElement();
+    file.id = '1';
+    file.isFolder = false;
+    file.name = 'test';
+    file.parent = 'root';
+    app.fileSelected(file);
+    expect(alertSpy).toHaveBeenCalledWith(`You clicked ${file.name}`);
   });
 });
