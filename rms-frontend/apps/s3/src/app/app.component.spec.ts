@@ -161,7 +161,7 @@ describe('AppComponent', () => {
     expect(path).toEqual('first/');
   });
 
-  it(`should`, () => {
+  it(`should alert the file clicked`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     const alertSpy = jest.spyOn(window, 'alert').mockImplementation(() => {});
