@@ -1,4 +1,4 @@
-<div (dragover)="dragged = true">
+<div (dragover)="setDragged($event)">
   <mat-toolbar>
     <button mat-icon-button *ngIf="canNavigateUp" (click)="navigateUp()">
       <mat-icon>
@@ -87,7 +87,7 @@
       <button
         mat-menu-item
         (click)="openRenameDialog(element)"
-        [disabled]="selected.length"
+        [disabled]="selected.length > 0"
       >
         <mat-icon>edit</mat-icon>
         <span>Rename</span>

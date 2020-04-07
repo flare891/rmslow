@@ -100,11 +100,46 @@ export class AppComponent implements OnInit {
   }
 
   filesUploaded(files: FileElement[]) {
+    const pathFolders: FileElement[] = [];
+    const createfFolders: string[] = [];
+    files.forEach((element, totalIndex) => {
+      if (element.parent) {
+        const path = element.parent.split('/');
+        let previd = '';
+        path.forEach((newFolderName, index, array) => {
+          if (!createfFolders.includes(newFolderName)) {
+            createfFolders.push(newFolderName);
+            const folder = new FileElement();
+            folder.isFolder = true;
+            folder.name = newFolderName;
+            if (index === 0) {
+              folder.parent = this.currentRoot?.id || 'root';
+            } else {
+              if (previd.length) folder.parent = previd;
+              else {
+                folder.parent = pathFolders.find(
+                  a => a.name === array[index - 1]
+                ).id;
+              }
+            }
+            folder.id = v4();
+            previd = folder.id;
+            this.store.dispatch(new AddFolder(folder));
+            pathFolders.push(folder);
+          }
+        });
+      }
+    });
     this.store.dispatch(
       new UploadFiles(
         files.map(file => {
           file.id = v4();
-          file.parent = this.currentRoot?.id || 'root';
+          if (file.parent) {
+            const filePath = file.parent.split('/');
+            file.parent = pathFolders.find(
+              folder => folder.name === filePath[filePath.length - 1]
+            ).id;
+          } else file.parent = this.currentRoot?.id || 'root';
           return file;
         })
       )

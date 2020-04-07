@@ -142,6 +142,20 @@ describe('AppComponent', () => {
     expect(store.dispatch).toHaveBeenCalledTimes(1);
     expect(store.dispatch).toHaveBeenCalledWith({ files: [file] });
   });
+  it(`should call uploadFiles and create sub folders`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    const file = new FileElement();
+    file.isFolder = false;
+    file.id = '1';
+    file.parent = 'test';
+    const file2 = new FileElement();
+    file2.isFolder = false;
+    file2.id = '1';
+    file2.parent = 'test/new/thing';
+    app.filesUploaded([file, file2]);
+    expect(store.dispatch).toHaveBeenCalledTimes(4);
+  });
   it(`should push to path`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
