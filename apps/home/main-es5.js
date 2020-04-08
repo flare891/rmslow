@@ -391,13 +391,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       this.title = 'home';
       this.links = [{
         key: 'Main Home',
-        value: "https://RMSLowside.github.io/rmslow/apps/lazy-load/"
+        value: "https://RMSLowside.github.io/rmslow/apps/home/"
       }, {
         key: 'Kaylee Home',
-        value: "https://saepark90.github.io/rmslow/apps/lazy-load/"
+        value: "https://saepark90.github.io/rmslow/apps/home/"
       }, {
         key: 'Steve Home',
-        value: "https://smcfall2.github.io/rmslow/apps/lazy-load/"
+        value: "https://smcfall2.github.io/rmslow/apps/home/"
       }, {
         key: 'S3 App',
         value: "".concat(location.origin, "/rmslow/apps/s3")
