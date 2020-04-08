@@ -49,6 +49,8 @@ export class FileExplorerComponent {
   @Output() navigatedDown = new EventEmitter<FileElement>();
   @Output() fileSelected = new EventEmitter<FileElement>();
   @Output() navigatedUp = new EventEmitter();
+  @Output() encryptEmitter = new EventEmitter<FileElement>();
+  @Output() decryptEmitter = new EventEmitter<FileElement>();
 
   deleteElement(element: FileElement) {
     if (this.selected.length) {
@@ -160,9 +162,12 @@ export class FileExplorerComponent {
     //Add any fileLeave code
   }
 
-  setDragged(event: DragEvent) {
-    if (event.dataTransfer.types.includes('Files')) this.dragged = true;
-    //else dragging something else
+  encrypt(file: FileElement) {
+    this.encryptEmitter.emit(file);
+  }
+
+  decrypt(file: FileElement) {
+    this.decryptEmitter.emit(file);
   }
 
   private toggleInArray(array: any[], element: any) {
