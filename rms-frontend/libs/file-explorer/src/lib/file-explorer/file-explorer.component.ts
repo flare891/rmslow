@@ -49,6 +49,8 @@ export class FileExplorerComponent {
   @Output() navigatedDown = new EventEmitter<FileElement>();
   @Output() fileSelected = new EventEmitter<FileElement>();
   @Output() navigatedUp = new EventEmitter();
+  @Output() encryptEmitter = new EventEmitter<FileElement>();
+  @Output() decryptEmitter = new EventEmitter<FileElement>();
 
   deleteElement(element: FileElement) {
     if (this.selected.length) {
@@ -158,6 +160,14 @@ export class FileExplorerComponent {
 
   public fileLeave(event) {
     //Add any fileLeave code
+  }
+
+  encrypt(file: FileElement) {
+    this.encryptEmitter.emit(file);
+  }
+
+  decrypt(file: FileElement) {
+    this.decryptEmitter.emit(file);
   }
 
   setDragged(event: DragEvent) {

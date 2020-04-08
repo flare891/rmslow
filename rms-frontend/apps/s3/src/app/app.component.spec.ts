@@ -156,6 +156,26 @@ describe('AppComponent', () => {
     app.filesUploaded([file, file2]);
     expect(store.dispatch).toHaveBeenCalledTimes(4);
   });
+  it(`should encrypt the file and call rename`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    const file = new FileElement();
+    file.isFolder = false;
+    file.id = '1';
+    file.name = 'test';
+    app.encrypt(file);
+    expect(store.dispatch).toHaveBeenCalledTimes(1);
+  });
+  it(`should decrypt the file and call rename`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    const file = new FileElement();
+    file.isFolder = false;
+    file.id = '1';
+    file.name = 'test';
+    app.decrypt(file);
+    expect(store.dispatch).toHaveBeenCalledTimes(1);
+  });
   it(`should push to path`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;

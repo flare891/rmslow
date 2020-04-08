@@ -16,6 +16,7 @@ import {
   RenameFile
 } from './+state/file.actions';
 import { ExplorerState } from './+state/file.state';
+import * as CryptoJS from 'crypto-js';
 
 @Component({
   selector: 's3-root',
@@ -29,6 +30,8 @@ export class AppComponent implements OnInit {
   currentRoot: FileElement;
   currentPath: string;
   canNavigateUp = false;
+  password = 'testpassword';
+  serverkey = 'randomkey';
 
   @Select(ExplorerState.currentSpace) files$: Observable<FileElement[]>;
 
@@ -159,5 +162,27 @@ export class AppComponent implements OnInit {
     split.splice(split.length - 2, 1);
     p = split.join('/');
     return p;
+  }
+
+  encrypt(file: FileElement) {
+    const text = file.name;
+    let encrypted = CryptoJS.AES.encrypt(text, this.password).toString();
+    file.name = CryptoJS.AES.encrypt(
+      encrypted.toString(),
+      this.serverkey
+    ).toString();
+    this.store.dispatch(new RenameFile(file.id, file.name));
+  }
+
+  decrypt(file: FileElement) {
+    const encrypted = file.name;
+    let decrypted1 = CryptoJS.AES.decrypt(encrypted, this.serverkey);
+    decrypted1 = decrypted1.toString(CryptoJS.enc.Utf8);
+    const decrypted = CryptoJS.AES.decrypt(
+      decrypted1.toString(),
+      this.password
+    );
+    file.name = decrypted.toString(CryptoJS.enc.Utf8);
+    this.store.dispatch(new RenameFile(file.id, file.name));
   }
 }
