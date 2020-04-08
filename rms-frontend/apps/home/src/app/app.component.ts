@@ -10,6 +10,10 @@ export class AppComponent {
   title = 'home';
   links: KeyValue<string, string>[] = [
     {
+      key: 'Main Home',
+      value: `https://RMSLowside.github.io/rmslow/apps/lazy-load/`
+    },
+    {
       key: 'Kaylee Home',
       value: `https://saepark90.github.io/rmslow/apps/lazy-load/`
     },
