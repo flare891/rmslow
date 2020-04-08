@@ -166,7 +166,7 @@ export class AppComponent implements OnInit {
 
   encrypt(file: FileElement) {
     const text = file.name;
-    let encrypted = CryptoJS.AES.encrypt(text, this.password).toString();
+    const encrypted = CryptoJS.AES.encrypt(text, this.password).toString();
     file.name = CryptoJS.AES.encrypt(
       encrypted.toString(),
       this.serverkey
@@ -175,14 +175,16 @@ export class AppComponent implements OnInit {
   }
 
   decrypt(file: FileElement) {
-    const encrypted = file.name;
-    let decrypted1 = CryptoJS.AES.decrypt(encrypted, this.serverkey);
-    decrypted1 = decrypted1.toString(CryptoJS.enc.Utf8);
-    const decrypted = CryptoJS.AES.decrypt(
-      decrypted1.toString(),
-      this.password
-    );
-    file.name = decrypted.toString(CryptoJS.enc.Utf8);
-    this.store.dispatch(new RenameFile(file.id, file.name));
+    if (file.name.startsWith('U2')) {
+      const encrypted = file.name;
+      let decrypted1 = CryptoJS.AES.decrypt(encrypted, this.serverkey);
+      decrypted1 = decrypted1.toString(CryptoJS.enc.Utf8);
+      const decrypted = CryptoJS.AES.decrypt(
+        decrypted1.toString(),
+        this.password
+      );
+      file.name = decrypted.toString(CryptoJS.enc.Utf8);
+      this.store.dispatch(new RenameFile(file.id, file.name));
+    } else alert(`File not encrypted`);
   }
 }

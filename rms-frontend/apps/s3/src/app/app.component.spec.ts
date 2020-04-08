@@ -172,9 +172,21 @@ describe('AppComponent', () => {
     const file = new FileElement();
     file.isFolder = false;
     file.id = '1';
-    file.name = 'test';
+    file.name = 'U2s';
     app.decrypt(file);
     expect(store.dispatch).toHaveBeenCalledTimes(1);
+  });
+  it(`should not decrypt the file and alert`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const alertSpy = jest.spyOn(window, 'alert').mockImplementation(() => {});
+    const app = fixture.componentInstance;
+    const file = new FileElement();
+    file.isFolder = false;
+    file.id = '1';
+    file.name = 'test';
+    app.decrypt(file);
+    expect(store.dispatch).toHaveBeenCalledTimes(0);
+    expect(alertSpy).toHaveBeenCalledWith(`File not encrypted`);
   });
   it(`should push to path`, () => {
     const fixture = TestBed.createComponent(AppComponent);

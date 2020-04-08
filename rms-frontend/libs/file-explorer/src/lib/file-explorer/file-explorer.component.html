@@ -1,4 +1,4 @@
-<div (dragover)="setDragged($event)">
+<div (dragover)="dragged = true">
   <mat-toolbar>
     <button mat-icon-button *ngIf="canNavigateUp" (click)="navigateUp()">
       <mat-icon>

@@ -170,11 +170,6 @@ export class FileExplorerComponent {
     this.decryptEmitter.emit(file);
   }
 
-  setDragged(event: DragEvent) {
-    if (event.dataTransfer.types.includes('Files')) this.dragged = true;
-    //else dragging something else
-  }
-
   private toggleInArray(array: any[], element: any) {
     const index = array.indexOf(element);
     if (index === -1) {
