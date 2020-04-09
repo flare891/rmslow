@@ -1,6 +1,6 @@
 # S3
 
-This application is to be used to wrap S3 in a familiar file explorer view. This application relies on the file-explorer lib for all of the visuals. It is currently a good example on how to structure smart vs dumb components as all of the business logic is handled with the app component and all of the view logic is held within the file-explorer library. This apllication uses NGXS to manage the state. This uses crypto-js to perform the encryption/decryption.
+This application is to be used to wrap S3 in a familiar file explorer view. This application relies on the file-explorer lib for all of the visuals. It is currently a good example on how to structure smart vs dumb components as all of the business logic is handled with the app component and all of the view logic is held within the file-explorer library. This apllication uses NGXS to manage the state. It also uses the storage plugin for NGXS to persist user state in local storage. This uses crypto-js to perform the encryption/decryption.
 
 ## Known issues
 
