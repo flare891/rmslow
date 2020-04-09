@@ -100,6 +100,8 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
 Visit the [Nx Documentation](https://nx.dev/angular) to learn more.
 
+Cache busting is implemented by adding meta tags on the index.html so they will force pull new ones each time. All the scripts should be busted each build thanks to Angular's output hashing. This makes all the scripts have a different name each time it is built.
+
 
 ## Angular Material
 
