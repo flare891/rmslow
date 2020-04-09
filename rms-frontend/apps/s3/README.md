@@ -8,7 +8,7 @@ This application is to be used to wrap S3 in a familiar file explorer view. This
 
 - Since the file-explorer lib does not supportinternal drang and drop, then it is not supported in this app either.
 
-- Nothing saves so a refresh of the page will reset you to the default 10 folder. This may be fixed after we investigate saving to local storage and hydrating state from local storage.
+- With the storage plugin state should be maintained within the browser. If you witch browsers or computers it will not preserve state.
 
 ## Running unit tests
 
