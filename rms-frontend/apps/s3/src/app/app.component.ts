@@ -13,8 +13,7 @@ import {
   UploadFiles,
   NavigateTo,
   NavigateUp,
-  RenameFile,
-  SetPath
+  RenameFile
 } from './+state/file.actions';
 import { ExplorerState } from './+state/file.state';
 import * as CryptoJS from 'crypto-js';

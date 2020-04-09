@@ -49,8 +49,3 @@ export class NavigateUp {
   static readonly type = '[Explorer] Navigate Up';
   constructor() {}
 }
-
-export class SetPath {
-  static readonly type = '[Explorer] SetPath';
-  constructor(public path: string) {}
-}

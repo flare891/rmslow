@@ -10,8 +10,7 @@ import {
   MoveFolder,
   MoveFile,
   NavigateTo,
-  NavigateUp,
-  SetPath
+  NavigateUp
 } from './file.actions';
 import { ImmutableContext, ImmutableSelector } from '@ngxs-labs/immer-adapter';
 import { Injectable } from '@angular/core';
@@ -182,16 +181,6 @@ export class ExplorerState {
     ctx.setState((hereState: ExplorerStateModel) => {
       hereState.currentRoot = newRoot;
       hereState.path = newPath;
-      return hereState;
-    });
-    //Add code to send files to server here
-  }
-
-  @Action(SetPath)
-  @ImmutableContext()
-  setPath(ctx: StateContext<ExplorerStateModel>, action: SetPath) {
-    ctx.setState((hereState: ExplorerStateModel) => {
-      hereState.path = action.path;
       return hereState;
     });
     //Add code to send files to server here
