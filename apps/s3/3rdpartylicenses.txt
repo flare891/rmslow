@@ -94,6 +94,9 @@ MIT
 @ngxs/devtools-plugin
 MIT
 
+@ngxs/storage-plugin
+MIT
+
 @ngxs/store
 MIT
 
