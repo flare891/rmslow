@@ -119,7 +119,7 @@ This project uses NGXS for state management. NGXS is a redux based state managem
 
 ## Unit testing
 
-Our unit tests are written using the Jest test runner. Jest is configured by default when setting up an Nx repo. Below are some benefits fo Jest over Karma+Jasmine:
+Our unit tests are written using the Jest test runner. Jest is configured by default when setting up an Nx repo. Below are some benefits of Jest over Karma+Jasmine:
 
 - Tests in Jest run faster than Karma
 - Tests are run in Node, not in the browser, which should make it easy enough to run tests in our build scripts
