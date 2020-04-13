@@ -127,12 +127,13 @@ Our unit tests are written using the Jest test runner. Jest is configured by def
 - With Nx and Jest you can run the only changed tests if you want. Such as if you edit ComponentA you can set it so it runs ComponentA tests, and not waste time testing things that have not changed.
 - Can run only uncommited changes locally before commiting changes to github
 - Better watch mode while writing tests, can watch specific files/tests instead of watching the whole app/lib
-- Better expections, has toHaveProperty and toMatchSnapshot which are super nice
+- Better expections, has toHaveProperty() and toMatchSnapshot() which are super nice
 - Better use of the Nx testing GUI
+- Less configuration needed
 
-The main downsides to Jest are that our unit tests at the office would need rewritten (Thoung about 90% of them will need rewritten anyway), and that you cannot test multiple browsers in your unit tests.
+The main downsides to Jest are that our unit tests at the office would need rewritten (though about a large portion of them will need rewritten anyway), and that you cannot test multiple browsers in your unit tests. There are npm scripts that will do the bulk of the work to translate tests from Karma to Jest.
 
-Article on why Jest is better:
+Articles on why Jest is better:
 
 - https://blog.nrwl.io/nrwl-nx-6-3-faster-testing-with-jest-20a8ddb5064
 - https://medium.com/@hello_62448/moving-from-karma-jasmine-to-jest-cc32cc474a7f
