@@ -1,7 +1,12 @@
-<div style="height: 100%; width: 100%; box-sizing: border-box;">
-  <mat-card
-    style="height: 100%; width: 100%; box-sizing: border-box; padding:0"
-  >
+<div
+  class="{{ theme$ | async }}-theme"
+  style="display: flex; flex-direction: row; height: 100%;"
+>
+  <mat-card style="flex:1 1 auto; padding: 0;margin: 0;">
+    <rms-frontend-header
+      [title]="'S3 Test App'"
+      (themeChange)="themeChange($event)"
+    ></rms-frontend-header>
     <rms-file-explorer
       [fileElements]="files$ | async"
       [path]="(currentPath$ | async) || 'Files'"

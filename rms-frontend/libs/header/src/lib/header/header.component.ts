@@ -1,17 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { KeyValue } from '@angular/common';
-import { Store, Select } from '@ngxs/store';
-import { GlobalState, SetTheme } from '@rms-frontend/core';
-import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'home-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'rms-frontend-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
-export class AppComponent {
-  constructor(public store: Store) {}
-  title = 'home';
+export class HeaderComponent {
+  @Input() title: string;
+  @Output() themeChange = new EventEmitter<string>();
+  constructor() {}
+
   links: KeyValue<string, string>[] = [
     {
       key: 'Main Home',
@@ -28,8 +27,4 @@ export class AppComponent {
     { key: 'S3 App', value: `${location.origin}/rmslow/apps/s3` },
     { key: 'Lazy App', value: `${location.origin}/rmslow/apps/lazy-load` }
   ];
-  @Select(GlobalState.getTheme) theme$: Observable<string>;
-  themeChange(theme) {
-    this.store.dispatch(new SetTheme(theme));
-  }
 }

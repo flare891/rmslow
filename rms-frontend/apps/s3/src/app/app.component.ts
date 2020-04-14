@@ -17,6 +17,8 @@ import {
 } from './+state/file.actions';
 import { ExplorerState } from './+state/file.state';
 import * as CryptoJS from 'crypto-js';
+import { OverlayContainer } from '@angular/cdk/overlay';
+import { GlobalState, SetTheme } from '@rms-frontend/core';
 
 @Component({
   selector: 's3-root',
@@ -38,11 +40,19 @@ export class AppComponent implements OnInit {
 
   @Select(ExplorerState.currentPath) currentPath$: Observable<string>;
 
+  @Select(GlobalState.getTheme) theme$: Observable<string>;
+
   rootSub = this.root$.subscribe(a => {
     this.currentRoot = a;
     this.canNavigateUp = !!a?.parent;
   });
+  themeSub = this.theme$.subscribe(a => {
+    this.overlayContainer.getContainerElement().classList.add(`${a}-theme`);
+  });
 
+  themeChange(theme) {
+    this.store.dispatch(new SetTheme(theme));
+  }
   ngOnInit(): void {
     const initialFolders: FileElement[] = [];
     if (this.store.selectSnapshot(state => state.explorer.files.length) === 0)
@@ -59,7 +69,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  constructor(public store: Store) {}
+  constructor(public overlayContainer: OverlayContainer, public store: Store) {}
 
   addFolder(folder: { name: string }) {
     this.store.dispatch(
