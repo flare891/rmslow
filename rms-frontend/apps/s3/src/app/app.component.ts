@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   @Select(GlobalState.getTheme) theme$: Observable<string>;
 
   themeSub = this.theme$.subscribe(a => {
-    //this.overlayContainer.getContainerElement().classList.add(`${a}-theme`);
+    this.overlayContainer.getContainerElement().classList.add(`${a}-theme`);
   });
 
   themeChange(theme) {
