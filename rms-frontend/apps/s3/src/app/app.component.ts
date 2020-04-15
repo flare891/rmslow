@@ -2,7 +2,7 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Select, Store } from '@ngxs/store';
 import { OverlayContainer } from '@angular/cdk/overlay';
-import { GlobalState, SetTheme } from '@rms-frontend/core';
+import { GlobalState, SetTheme, Login, AuthState } from '@rms-frontend/core';
 
 @Component({
   selector: 's3-root',
@@ -14,8 +14,13 @@ export class AppComponent implements OnInit {
   title = 's3';
 
   @Select(GlobalState.getTheme) theme$: Observable<string>;
+  @Select(AuthState.isAuthenticated) authed$: Observable<boolean>;
 
-  themeSub = this.theme$.subscribe(a => {
+  themeSub = this.authed$.subscribe(a => {
+    console.log(a);
+  });
+
+  otherSub = this.theme$.subscribe(a => {
     this.overlayContainer.getContainerElement().classList.add(`${a}-theme`);
   });
 

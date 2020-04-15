@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ExplorerComponent } from './explorer/explorer.component';
+import { AuthGuard, PreAuthComponent } from '@rms-frontend/core';
 
 const routes: Routes = [
   {
-    path: '',
-    component: ExplorerComponent
-  }
+    path: 'home',
+    loadChildren: () =>
+      import('./explorer/explorer.module').then(m => m.ExplorerModule)
+  },
+  { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({
