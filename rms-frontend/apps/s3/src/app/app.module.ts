@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { CoreModule } from '@rms-frontend/core';
+import { CoreModule, GlobalState } from '@rms-frontend/core';
 
 import { AppComponent } from './app.component';
 import { NgxsModule } from '@ngxs/store';
@@ -23,7 +23,9 @@ import { AppRoutingModule } from './app-routing.module';
     ReactiveFormsModule,
     HeaderModule,
     NgxsModule.forFeature([ExplorerState]),
-    NgxsStoragePluginModule.forRoot(),
+    NgxsStoragePluginModule.forRoot({
+      key: [GlobalState, ExplorerState]
+    }),
     NgxsReduxDevtoolsPluginModule.forRoot()
   ],
   providers: [],
