@@ -16,7 +16,6 @@ export interface GlobalStateModel {
 @Injectable()
 export class GlobalState {
   @Selector()
-  @ImmutableSelector()
   public static getTheme(state: GlobalStateModel) {
     return state.theme;
   }
