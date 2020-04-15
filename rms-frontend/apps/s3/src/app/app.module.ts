@@ -9,15 +9,20 @@ import { NgxsStoragePluginModule } from '@ngxs/storage-plugin';
 import { FileExplorerModule } from '@rms-frontend/file-explorer';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ExplorerState } from './+state/file.state';
+import { HeaderModule } from '@rms-frontend/header';
+import { ExplorerComponent } from './explorer/explorer.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ExplorerComponent],
   imports: [
+    AppRoutingModule,
     CoreModule,
     FileExplorerModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxsModule.forRoot([ExplorerState]),
+    HeaderModule,
+    NgxsModule.forFeature([ExplorerState]),
     NgxsStoragePluginModule.forRoot(),
     NgxsReduxDevtoolsPluginModule.forRoot()
   ],
