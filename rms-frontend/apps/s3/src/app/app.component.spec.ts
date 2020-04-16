@@ -53,6 +53,8 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     fixture.detectChanges();
     app.loadHeader();
-    //expect(store.dispatch).toHaveBeenCalledTimes(1);
+    setTimeout(() => {
+      expect(app.headerRef).toBeDefined();
+    }, 50);
   });
 });
