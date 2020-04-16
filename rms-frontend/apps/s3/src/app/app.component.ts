@@ -19,7 +19,7 @@ import { HeaderComponent } from '@rms-frontend/header';
   styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 's3';
 
   @Select(GlobalState.getTheme) theme$: Observable<string>;
@@ -41,7 +41,6 @@ export class AppComponent implements OnInit {
   themeChange(theme) {
     this.store.dispatch(new SetTheme(theme));
   }
-  ngOnInit(): void {}
 
   constructor(
     public overlayContainer: OverlayContainer,
@@ -55,7 +54,6 @@ export class AppComponent implements OnInit {
       this.headerRef = this.vcr.createComponent(factory);
       this.headerRef.instance.title = 'S3';
       this.headerRef.hostView.detectChanges();
-      // Don't forget to unsubscribe
       this.headerRef.instance.themeChange.subscribe(theme => {
         this.themeChange(theme);
       });

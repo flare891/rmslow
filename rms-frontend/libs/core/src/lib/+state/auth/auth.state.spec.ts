@@ -1,24 +1,34 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
 import { NgxsModule, Store } from '@ngxs/store';
-import { AuthState, AuthStateModel } from './auth.state';
-import { AuthAction } from './auth.actions';
+import { AuthStateModel, AuthState } from './auth.state';
+import { Login } from './auth.actions';
+import { AuthService } from '../../auth.service';
+import { of } from 'rxjs';
+
+export const DEFAULT_STATE = {
+  auth: {
+    authourized: false
+  }
+};
 
 describe('Auth store', () => {
   let store: Store;
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [NgxsModule.forRoot([AuthState])]
-    }).compileComponents();
-    store = TestBed.get(Store);
-  }));
+  let service: AuthService;
 
-  it('should create an action and add an item', () => {
-    const expected: AuthStateModel = {
-      items: ['item-1']
-    };
-    store.dispatch(new AuthAction('item-1'));
-    const actual = store.selectSnapshot(AuthState.getState);
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      imports: [NgxsModule.forRoot([AuthState])],
+      providers: [AuthService]
+    });
+    store = TestBed.inject(Store);
+    store.reset(DEFAULT_STATE);
+    service = TestBed.inject(AuthService);
+  });
+  it('should login', () => {
+    const expected = true;
+    spyOn(service, 'login').and.returnValue(of(true));
+    store.dispatch(new Login());
+    const actual = store.selectSnapshot(AuthState.isAuthenticated);
     expect(actual).toEqual(expected);
   });
-
 });

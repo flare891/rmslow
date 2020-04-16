@@ -4,7 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CoreModule } from '@rms-frontend/core';
 import { RouterTestingModule } from '@angular/router/testing';
 import { NgxsModule, Store } from '@ngxs/store';
-import { HeaderModule } from '@rms-frontend/header';
+import { HeaderModule, HeaderComponent } from '@rms-frontend/header';
+import { BrowserModule } from '@angular/platform-browser';
 
 describe('AppComponent', () => {
   let store: Store;
@@ -19,7 +20,11 @@ describe('AppComponent', () => {
         RouterTestingModule.withRoutes([]),
         NgxsModule.forRoot([])
       ]
-    }).compileComponents();
+    })
+      .overrideModule(BrowserModule, {
+        set: { entryComponents: [HeaderComponent] }
+      })
+      .compileComponents();
     store = TestBed.inject(Store);
     spyOn(store, 'dispatch').and.returnValue(null);
   }));
@@ -41,5 +46,13 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     app.themeChange('dark');
     expect(store.dispatch).toHaveBeenCalledTimes(1);
+  });
+
+  it(`should load the header`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    fixture.detectChanges();
+    app.loadHeader();
+    //expect(store.dispatch).toHaveBeenCalledTimes(1);
   });
 });
