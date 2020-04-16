@@ -11,7 +11,7 @@ export interface AuthStateModel {
 @State<AuthStateModel>({
   name: 'auth',
   defaults: {
-    authourized: false
+    authourized: undefined
   }
 })
 @Injectable()

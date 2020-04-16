@@ -1,8 +1,17 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ChangeDetectionStrategy,
+  ViewChild,
+  ViewContainerRef,
+  ComponentFactoryResolver,
+  ComponentRef
+} from '@angular/core';
 import { Observable } from 'rxjs';
 import { Select, Store } from '@ngxs/store';
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { GlobalState, SetTheme, Login, AuthState } from '@rms-frontend/core';
+import { HeaderComponent } from '@rms-frontend/header';
 
 @Component({
   selector: 's3-root',
@@ -15,12 +24,17 @@ export class AppComponent implements OnInit {
 
   @Select(GlobalState.getTheme) theme$: Observable<string>;
   @Select(AuthState.isAuthenticated) authed$: Observable<boolean>;
+  @ViewChild('header', { read: ViewContainerRef }) vcr: ViewContainerRef;
+  headerRef: ComponentRef<HeaderComponent>;
 
-  themeSub = this.authed$.subscribe(a => {
-    console.log(a);
+  authedSub = this.authed$.subscribe(a => {
+    if (a) {
+      this.loadHeader();
+      this.authedSub.unsubscribe();
+    }
   });
 
-  otherSub = this.theme$.subscribe(a => {
+  themeSub = this.theme$.subscribe(a => {
     this.overlayContainer.getContainerElement().classList.add(`${a}-theme`);
   });
 
@@ -29,5 +43,22 @@ export class AppComponent implements OnInit {
   }
   ngOnInit(): void {}
 
-  constructor(public overlayContainer: OverlayContainer, public store: Store) {}
+  constructor(
+    public overlayContainer: OverlayContainer,
+    public store: Store,
+    private cfr: ComponentFactoryResolver
+  ) {}
+  async loadHeader() {
+    if (!this.headerRef) {
+      const { HeaderComponent } = await import('@rms-frontend/header');
+      const factory = this.cfr.resolveComponentFactory(HeaderComponent);
+      this.headerRef = this.vcr.createComponent(factory);
+      this.headerRef.instance.title = 'S3';
+      this.headerRef.hostView.detectChanges();
+      // Don't forget to unsubscribe
+      this.headerRef.instance.themeChange.subscribe(theme => {
+        this.themeChange(theme);
+      });
+    }
+  }
 }

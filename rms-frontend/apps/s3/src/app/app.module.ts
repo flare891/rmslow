@@ -8,9 +8,7 @@ import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { NgxsStoragePluginModule } from '@ngxs/storage-plugin';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ExplorerState } from './+state/file.state';
-import { HeaderModule } from '@rms-frontend/header';
 import { AppRoutingModule } from './app-routing.module';
-import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -23,7 +21,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CoreModule,
     FormsModule,
     ReactiveFormsModule,
-    HeaderModule,
     NgxsStoragePluginModule.forRoot({
       key: [GlobalState, ExplorerState]
     }),

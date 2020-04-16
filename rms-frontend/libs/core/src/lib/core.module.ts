@@ -37,6 +37,7 @@ import { NgxsModule } from '@ngxs/store';
 import { GlobalState } from './+state/global/global.state';
 import { PreAuthComponent } from './pre-auth/pre-auth.component';
 import { AuthState } from './+state/auth/auth.state';
+import { UnauthComponent } from './unauth/unauth.component';
 
 @NgModule({
   imports: [
@@ -109,6 +110,6 @@ import { AuthState } from './+state/auth/auth.state';
     MatPaginatorModule,
     PreAuthComponent
   ],
-  declarations: [PreAuthComponent]
+  declarations: [PreAuthComponent, UnauthComponent]
 })
 export class CoreModule {}

@@ -8,6 +8,7 @@ import { delay } from 'rxjs/operators';
 export class AuthService {
   constructor() {}
   login() {
-    return of(true).pipe(delay(2000));
+    const loggedIn = true;
+    return of(loggedIn).pipe(delay(2000));
   }
 }

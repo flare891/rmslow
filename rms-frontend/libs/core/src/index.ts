@@ -6,3 +6,4 @@ export * from './lib/+state/auth/auth.state';
 export * from './lib/auth.guard';
 
 export * from './lib/pre-auth/pre-auth.component';
+export * from './lib/unauth/unauth.component';
