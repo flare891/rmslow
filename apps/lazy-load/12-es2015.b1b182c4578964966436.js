@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{TuAl:function(n,t,r){"use strict";r.r(t),r.d(t,"GridModule",(function(){return c}));var o=r("2kYt"),e=r("LTOS"),u=r("EM62");let c=(()=>{class n{}return n.\u0275mod=u.Sb({type:n}),n.\u0275inj=u.Rb({factory:function(t){return new(t||n)},imports:[[o.c,e.a]]}),n})()}}]);
