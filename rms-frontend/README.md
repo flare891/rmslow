@@ -32,6 +32,7 @@ All of our applications are built with the Angular Framework. Visit [Angular Doc
   - On your local box make a directory ~/git
   - cd into that directory
   - git clone theLinkYouCopied
+  - git remote add upstream git@github.com:RMSLowside/rmslow.git
 - Install node and npm
   - sudo apt install nodejs
 - Verify node and npm
