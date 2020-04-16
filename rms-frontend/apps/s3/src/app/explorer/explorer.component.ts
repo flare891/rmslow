@@ -45,7 +45,7 @@ export class ExplorerComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     const initialFolders: FileElement[] = [];
-    if (this.store.selectSnapshot(state => state.explorer.files.length) === 0)
+    if (this.store.selectSnapshot(state => state.explorer?.files.length) === 0)
       for (let i = 0; i < 10; i++) {
         const folder = new FileElement();
         folder.isFolder = true;

@@ -22,7 +22,7 @@ export class GlobalState {
 
   @Action(SetTheme)
   @ImmutableContext()
-  public add(ctx: StateContext<GlobalStateModel>, { theme }: SetTheme) {
+  public setTheme(ctx: StateContext<GlobalStateModel>, { theme }: SetTheme) {
     const stateModel = ctx.getState();
     stateModel.theme = theme;
     ctx.setState(stateModel);

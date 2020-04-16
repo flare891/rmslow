@@ -3,10 +3,12 @@
   style="display: flex; flex-direction: row; height: 100%;"
 >
   <mat-card style="flex:1 1 auto; padding: 0;margin: 0;">
-    <rms-frontend-header
-      [title]="'S3 Test App'"
-      (themeChange)="themeChange($event)"
-    ></rms-frontend-header>
-    <router-outlet></router-outlet>
+    <ng-container #header> </ng-container>
+    <ng-template #loggedIn>
+      <router-outlet></router-outlet>
+    </ng-template>
+    <rms-pre-auth
+      *ngIf="(authed$ | async) === undefined; else loggedIn"
+    ></rms-pre-auth>
   </mat-card>
 </div>

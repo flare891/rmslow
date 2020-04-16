@@ -35,12 +35,13 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { NgxsModule } from '@ngxs/store';
 import { GlobalState } from './+state/global/global.state';
+import { PreAuthComponent } from './pre-auth/pre-auth.component';
+import { AuthState } from './+state/auth/auth.state';
+import { UnauthComponent } from './unauth/unauth.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    BrowserModule,
-    BrowserAnimationsModule,
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
@@ -71,13 +72,11 @@ import { GlobalState } from './+state/global/global.state';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    NgxsModule.forRoot([GlobalState]),
+    NgxsModule.forRoot([GlobalState, AuthState]),
     MatPaginatorModule
   ],
   exports: [
     CommonModule,
-    BrowserModule,
-    BrowserAnimationsModule,
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
@@ -108,7 +107,9 @@ import { GlobalState } from './+state/global/global.state';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
-  ]
+    MatPaginatorModule,
+    PreAuthComponent
+  ],
+  declarations: [PreAuthComponent, UnauthComponent]
 })
 export class CoreModule {}
