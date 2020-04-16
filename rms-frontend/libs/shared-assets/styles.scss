@@ -10,6 +10,8 @@
 
 .dark-theme {
   @include angular-material-theme($dark-app-theme);
+}
+.dark-theme.main {
   background-color: #444;
   color: white;
 }
