@@ -32,6 +32,8 @@ export class AppComponent {
   @Select(GlobalState.getTheme) theme$: Observable<string>;
 
   themeSub = this.theme$.subscribe(a => {
+    this.overlayContainer.getContainerElement().classList.remove('dark-theme');
+    this.overlayContainer.getContainerElement().classList.remove('light-theme');
     this.overlayContainer.getContainerElement().classList.add(`${a}-theme`);
   });
   themeChange(theme) {
