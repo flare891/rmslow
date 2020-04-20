@@ -33,10 +33,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { NgxsModule } from '@ngxs/store';
-import { GlobalState } from './+state/global/global.state';
 import { PreAuthComponent } from './pre-auth/pre-auth.component';
-import { AuthState } from './+state/auth/auth.state';
 import { UnauthComponent } from './unauth/unauth.component';
 
 @NgModule({
@@ -72,7 +69,6 @@ import { UnauthComponent } from './unauth/unauth.component';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    NgxsModule.forRoot([GlobalState, AuthState]),
     MatPaginatorModule
   ],
   exports: [
