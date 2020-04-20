@@ -2,7 +2,7 @@
 
 ## Angular
 
-All of our applications are built with the Angular Framework. Visit [Angular Documentation](https://angular.io/) for more information.
+All of our applications are built with the Angular Framework. Visit [Angular Documentation](https://angular.io/) for more information. TEST
 
 ## Applications
 
