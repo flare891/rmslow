@@ -35,6 +35,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { PreAuthComponent } from './pre-auth/pre-auth.component';
 import { UnauthComponent } from './unauth/unauth.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
@@ -69,7 +70,8 @@ import { UnauthComponent } from './unauth/unauth.component';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    FlexLayoutModule
   ],
   exports: [
     CommonModule,
@@ -104,7 +106,8 @@ import { UnauthComponent } from './unauth/unauth.component';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
-    PreAuthComponent
+    PreAuthComponent,
+    FlexLayoutModule
   ],
   declarations: [PreAuthComponent, UnauthComponent]
 })

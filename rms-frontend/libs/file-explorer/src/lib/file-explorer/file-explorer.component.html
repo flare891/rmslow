@@ -5,9 +5,9 @@
         arrow_back
       </mat-icon>
     </button>
-    <span style="margin-left: 8px"> {{ path || 'Files' }} </span>
+    <span> {{ path || 'Files' }} </span>
     <span class="spacer"></span>
-    <span style="font-size: small;" *ngIf="selected.length"
+    <span class="small-font" *ngIf="selected.length"
       >{{ selected.length }} File(s) Selected</span
     >
     <button *ngIf="selected.length" mat-icon-button (click)="selected = []">
@@ -27,14 +27,9 @@
     </button>
   </mat-toolbar>
 
-  <div
-    class="container"
-    fxFlex
-    fxLayout="row"
-    fxLayoutAlign="space-between stretch"
-  >
-    <div class="content" fxFlex fxLayout="row">
-      <mat-grid-list cols="8" rowHeight="100px" fxFlex>
+  <div class="container">
+    <div class="content">
+      <mat-grid-list cols="8" rowHeight="100px">
         <mat-grid-tile
           *ngFor="let element of _fileElements"
           class="file-or-folder"
@@ -46,6 +41,8 @@
           >
           </span>
           <div
+            fxFlex
+            fxLayout="column space-between"
             class="element-container"
             [ngStyle]="{
               'background-color': selected.includes(element) ? 'grey' : ''
