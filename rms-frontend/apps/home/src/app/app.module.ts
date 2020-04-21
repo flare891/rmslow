@@ -19,7 +19,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     BrowserAnimationsModule,
     CoreModule,
     HeaderModule,
-    FlexLayoutModule,
     NgxsModule.forRoot([GlobalState]),
     NgxsStoragePluginModule.forRoot({
       key: [GlobalState]
