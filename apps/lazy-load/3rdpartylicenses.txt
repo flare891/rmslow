@@ -119,6 +119,12 @@ MIT
 @ngxs-labs/immer-adapter
 MIT
 
+@ngxs/devtools-plugin
+MIT
+
+@ngxs/storage-plugin
+MIT
+
 @ngxs/store
 MIT
 
