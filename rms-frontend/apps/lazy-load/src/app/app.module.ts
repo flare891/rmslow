@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CoreModule, GlobalState, AuthState } from '@rms-frontend/core';
 
 import { AppComponent } from './app.component';
@@ -17,6 +18,8 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     BrowserAnimationsModule,
     CoreModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     NgxsModule.forRoot([GlobalState, AuthState,]),
     NgxsStoragePluginModule.forRoot({
