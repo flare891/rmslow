@@ -59,6 +59,13 @@
       <recent name="" />
       <recent name="groovy.util.GroovyTestCase" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\adamp\Desktop\rmslow\NiFi\flows" />
+      <recent name="C:\Users\adamp\Desktop\rmslow\liquibase\rmm" />
+      <recent name="C:\Users\adamp\Desktop\rmslow\liquibase\rmm\sql" />
+      <recent name="C:\Users\adamp\Desktop\rmslow\Drools\tomcat-stuff\conf" />
+      <recent name="C:\Users\adamp\Desktop\rmslow\Drools\tomcat-stuff\libs" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="rms" />
       <recent name="rms.processors.json" />
@@ -72,13 +79,6 @@
       <recent name="C:\Users\adamp\Desktop\rmslow\liquibase" />
       <recent name="C:\Users\adamp\Desktop\rmslow\NiFi\flows\local" />
       <recent name="C:\Users\adamp\Desktop\rmslow\NiFi\flows" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\adamp\Desktop\rmslow\NiFi\flows" />
-      <recent name="C:\Users\adamp\Desktop\rmslow\liquibase\rmm" />
-      <recent name="C:\Users\adamp\Desktop\rmslow\liquibase\rmm\sql" />
-      <recent name="C:\Users\adamp\Desktop\rmslow\Drools\tomcat-stuff\conf" />
-      <recent name="C:\Users\adamp\Desktop\rmslow\Drools\tomcat-stuff\libs" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.AddToRmmProcessorTest">

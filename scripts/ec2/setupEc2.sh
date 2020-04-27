@@ -34,6 +34,9 @@ rm nifi-1.11.4-bin.tar.gz
 mv nifi-1.11.4 nifi
 sed -i 's/-Xms512m/-Xms2048m/g' nifi/conf/bootstrap.conf
 sed -i 's/-Xmx512m/-Xmx2048m/g' nifi/conf/bootstrap.conf
+sed -i 's/nifi.remote.input.host=/nifi.remote.input.host=localhost/g' nifi/conf/nifi.properties
+sed -i 's/nifi.remote.input.socket.port=/nifi.remote.input.socket.port=10000/g' nifi/conf/nifi.properties
+sed -i 's/nifi.remote.input.http.enabled=false/nifi.remote.input.http.enabled=true/g' nifi/conf/nifi.properties
 cp rmslow/NiFi/flows/flow.xml.gz nifi/conf/flow.xml.gz
 pushd rmslow/NiFi
 mvn clean install
