@@ -122,6 +122,9 @@ MIT
 @ngxs/devtools-plugin
 MIT
 
+@ngxs/router-plugin
+MIT
+
 @ngxs/storage-plugin
 MIT
 
