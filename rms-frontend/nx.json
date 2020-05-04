@@ -72,6 +72,9 @@
     },
     "header": {
       "tags": []
+    },
+    "help-modal": {
+      "tags": []
     }
   }
 }
