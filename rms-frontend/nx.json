@@ -75,6 +75,17 @@
     "help-modal": {
       "tags": []
     },
+    "rules-engine": {
+      "tags": []
+    },
+    "rules-engine-e2e": {
+      "tags": [],
+      "implicitDependencies": ["rules-engine"]
+    },
+    "create-rule-modal": {
+      "tags": []
+    },
+    "order-rules-modal": {
     "date-range": {
       "tags": []
     }
