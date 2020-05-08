@@ -22,6 +22,7 @@
       "@rms-frontend/forms": ["libs/forms/src/index.ts"],
       "@rms-frontend/header": ["libs/header/src/index.ts"],
       "@rms-frontend/help-modal": ["libs/help-modal/src/index.ts"],
+      "@rms-frontend/date-range": ["libs/date-range/src/index.ts"],
       "@rms-frontend/version-history": ["libs/version-history/src/index.ts"]
     }
   },
