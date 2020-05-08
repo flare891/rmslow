@@ -17,16 +17,17 @@ describe('home', () => {
   //   expect(true).to.equal(false)
   // })
 
-  it('Does not do much ! - will pass', function test() {  // old style javascript function
-    expect(true).to.equal(true)
-  })
+  // it('Does not do much ! - will pass', function test() {  // old style javascript function
+  //   expect(true).to.equal(true)
+  // })
 
   it('Verify Home, S3 App link', () => {
         // Currently have to use the explicit wait, once hooked up will use route
         cy.contains('S3 App').click().wait(500)
         cy.url().should('include', '/apps/s3/') // "should" creates an assertion, which are automatically retried untill they pass or time out
         //cy.url().contains('/apps/s3/')        // "contains" gets the DOM element containing the text
-        cy.contains('Folder0')
+        cy.contains('Folder0').should('be.visible')
+        cy.wait(1500) // to see
 
         // // might work once front end is hooked up...
         // cy.server()
@@ -57,19 +58,19 @@ describe('home', () => {
 
   it('Verify Home Lazy App link', () => {
     // Currently have to use the explicit wait, once hooked up will use route
-    cy.contains('Lazy App').click().wait(500)
+    cy.contains('Lazy App').click().wait(2500) // the app has a 2 second wait for the lazy load, using 2.5 seconds
     cy.url().should('include', '/apps/lazy-load/')
-    //cy.contains('Folder0')
+    cy.get("button").contains("lazy route").should('be.visible')
+    cy.wait(1500) // to see
   })
 
   it('Verify NGXS Form App link', () => {
     // Currently have to use the explicit wait, once hooked up will use route
     cy.contains('NGXS Form App').click().wait(500)
     cy.url().should('include', '/apps/ngxs-forms/')
-    //cy.contains('Folder0')
     cy.get('[formcontrolname="novelName"]')     // "get" grabs one or more DOM elements by selector or alias
       .type('superfragacalalisticexpealadocious').should('have.value', 'superfragacalalisticexpealadocious')
-    //cy.get("button").click  // not sure if this button click works, heck not even shure what the button is supposed to do...
+    //cy.get("button").click
 
     cy.contains('open dynamic form').click()
     cy.get('#firstName')  // # is short for id=
