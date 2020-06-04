@@ -40,18 +40,12 @@ export class AppComponent {
     {
       key: 'Rules Engine',
       value: `${location.origin}/rmslow/apps/rules-engine`
+    },
+    {
+      key: 'Metrics',
+      value: `${location.origin}/rmslow/apps/charts`
     }
   ];
-  @Select(GlobalState.getTheme) theme$: Observable<string>;
-
-  themeSub = this.theme$.subscribe(a => {
-    this.overlayContainer.getContainerElement().classList.remove('dark-theme');
-    this.overlayContainer.getContainerElement().classList.remove('light-theme');
-    this.overlayContainer.getContainerElement().classList.add(`${a}-theme`);
-  });
-  themeChange(theme) {
-    this.store.dispatch(new SetTheme(theme));
-  }
 
   getHelpModalContent() {
     const helpContent = [
