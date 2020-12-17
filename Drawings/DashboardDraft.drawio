@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-17T13:38:03.424Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 Edg/87.0.664.60" etag="gU9wM3sS8ja6H6_0Y9G4" version="14.0.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-12-17T13:39:42.349Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 Edg/87.0.664.60" etag="MdABbc6CE5eqxRF7a0ui" version="14.0.4" type="github" pages="2">
   <diagram id="gX4wris3mb_DUg0VSxXF" name="Page-1">
     <mxGraphModel dx="1422" dy="893" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1700" math="0" shadow="0">
       <root>
@@ -78,47 +78,6 @@
         </mxCell>
         <mxCell id="mZss-b2yl9125BtwwbxF-28" value="" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FFFFFF;rotation=90;fillColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="-238" y="346" width="782" height="260" as="geometry" />
-        </mxCell>
-        <mxCell id="SoCa46-vVTfC3-fW9XUU-1" value="" style="dashed=0;align=center;fontSize=12;shape=rect;fillColor=#ffffff;strokeColor=none;shadow=0;" vertex="1" parent="1">
-          <mxGeometry x="183" y="1364" width="358" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="SoCa46-vVTfC3-fW9XUU-2" value="Recents" style="dashed=0;html=1;shape=mxgraph.gmdl.recents;fillColor=#808080;strokeColor=none;fontColor=#808080;verticalAlign=top;spacingLeft=0;fontSize=10;labelPosition=center;verticalLabelPosition=bottom;align=center;spacingBottom=0;spacingTop=-6;" vertex="1" parent="SoCa46-vVTfC3-fW9XUU-1">
-          <mxGeometry x="0.15" y="0.5" width="20" height="20" relative="1" as="geometry">
-            <mxPoint x="-10" y="-15" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="SoCa46-vVTfC3-fW9XUU-3" value="Favorites" style="dashed=0;html=1;shape=mxgraph.gmdl.heart;fillColor=#00796B;strokeColor=none;fontColor=#00796B;verticalAlign=top;spacingLeft=0;fontSize=10;labelPosition=center;verticalLabelPosition=bottom;align=center;spacingBottom=0;spacingTop=-5;" vertex="1" parent="SoCa46-vVTfC3-fW9XUU-1">
-          <mxGeometry x="0.5" y="0.5" width="20" height="18" relative="1" as="geometry">
-            <mxPoint x="-10" y="-14" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="SoCa46-vVTfC3-fW9XUU-4" value="Nearby" style="dashed=0;html=1;shape=mxgraph.gmdl.nearby;fillColor=#808080;strokeColor=none;fontColor=#808080;verticalAlign=top;spacingLeft=0;fontSize=10;labelPosition=center;verticalLabelPosition=bottom;align=center;spacingBottom=0;spacingTop=-6;" vertex="1" parent="SoCa46-vVTfC3-fW9XUU-1">
-          <mxGeometry x="0.85" y="0.5" width="20" height="20" relative="1" as="geometry">
-            <mxPoint x="-10" y="-15" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="SoCa46-vVTfC3-fW9XUU-5" value="" style="dashed=0;align=center;fontSize=12;shape=rect;fillColor=#00796B;strokeColor=none;shadow=0;" vertex="1" parent="1">
-          <mxGeometry x="183" y="1423" width="358" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="SoCa46-vVTfC3-fW9XUU-6" value="" style="dashed=0;html=1;shape=mxgraph.gmdl.video_2;fillColor=#ffffff;strokeColor=none;fontColor=#ffffff;verticalAlign=top;spacingLeft=0;fontSize=10;labelPosition=center;verticalLabelPosition=bottom;align=center;spacingBottom=0;spacingTop=-6;opacity=60;" vertex="1" parent="SoCa46-vVTfC3-fW9XUU-5">
-          <mxGeometry x="0.15" y="0.5" width="20" height="16" relative="1" as="geometry">
-            <mxPoint x="-10" y="-8" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="SoCa46-vVTfC3-fW9XUU-7" value="Music" style="dashed=0;html=1;shape=mxgraph.gmdl.music;fillColor=#ffffff;strokeColor=none;fontColor=#ffffff;verticalAlign=top;spacingLeft=0;fontSize=10;labelPosition=center;verticalLabelPosition=bottom;align=center;spacingBottom=0;spacingTop=-5;" vertex="1" parent="SoCa46-vVTfC3-fW9XUU-5">
-          <mxGeometry x="0.38" y="0.5" width="14" height="20" relative="1" as="geometry">
-            <mxPoint x="-10" y="-14" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="SoCa46-vVTfC3-fW9XUU-8" value="" style="dashed=0;html=1;shape=mxgraph.gmdl.book;fillColor=#ffffff;strokeColor=none;fontColor=#ffffff;verticalAlign=top;spacingLeft=0;fontSize=10;labelPosition=center;verticalLabelPosition=bottom;align=center;spacingBottom=0;spacingTop=-6;opacity=60;" vertex="1" parent="SoCa46-vVTfC3-fW9XUU-5">
-          <mxGeometry x="0.62" y="0.5" width="16" height="20" relative="1" as="geometry">
-            <mxPoint x="-8" y="-10" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="SoCa46-vVTfC3-fW9XUU-9" value="" style="dashed=0;html=1;shape=mxgraph.gmdl.webpage;fillColor=#ffffff;strokeColor=none;fontColor=#ffffff;verticalAlign=top;spacingLeft=0;fontSize=10;labelPosition=center;verticalLabelPosition=bottom;align=center;spacingBottom=0;spacingTop=-6;opacity=60;" vertex="1" parent="SoCa46-vVTfC3-fW9XUU-5">
-          <mxGeometry x="0.85" y="0.5" width="20" height="20" relative="1" as="geometry">
-            <mxPoint x="-10" y="-15" as="offset" />
-          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
