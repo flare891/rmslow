@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-21T18:55:45.467Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="lLR4xkH8rtGu2ZjYHzG3" version="14.0.1" type="github" pages="15">
+<mxfile host="app.diagrams.net" modified="2020-12-21T18:58:16.353Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="vTCyQ_ili27tC62MvZhu" version="14.0.1" type="github" pages="15">
   <diagram name="Dashboard w/Carousel" id="YE4-XOmHQeGqe6cq5tir">
     <mxGraphModel dx="1297" dy="762" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1700" math="0" shadow="0">
       <root>
@@ -791,7 +791,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Dataset View" id="bx-l42W56UCqLN4ZpDT2">
-    <mxGraphModel dx="2266" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2516" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="am8qf2OcaLAEL4w4OG4d-0" />
         <mxCell id="am8qf2OcaLAEL4w4OG4d-1" parent="am8qf2OcaLAEL4w4OG4d-0" />
@@ -1031,7 +1031,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Dataset View - Filter" id="YPLGooF5-guVGj23MdBU">
-    <mxGraphModel dx="1721" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2266" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="Rq8lkD2myfss9lLclppB-0" />
         <mxCell id="Rq8lkD2myfss9lLclppB-1" parent="Rq8lkD2myfss9lLclppB-0" />
@@ -1276,11 +1276,6 @@
         <mxCell id="3fjIFF_94ipeUnSv15aS-69" value="" style="rounded=1;fillColor=#F0F2F5;strokeColor=#D8DCE3;align=left;verticalAlign=middle;fontStyle=0;fontSize=12;labelPosition=right;verticalLabelPosition=middle;spacingLeft=10;html=1;shadow=0;dashed=0;sketch=0;" vertex="1" parent="3fjIFF_94ipeUnSv15aS-127">
           <mxGeometry x="140" y="195" width="12" height="12" as="geometry" />
         </mxCell>
-        <mxCell id="3fjIFF_94ipeUnSv15aS-1" value="" style="shape=line;strokeColor=#dddddd;resizeWidth=1;" vertex="1" parent="3fjIFF_94ipeUnSv15aS-127">
-          <mxGeometry x="30" y="280" width="460.0000000000001" height="10" as="geometry">
-            <mxPoint y="50" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="3fjIFF_94ipeUnSv15aS-2" value="" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.x;strokeColor=#868686;strokeWidth=2;" vertex="1" parent="3fjIFF_94ipeUnSv15aS-127">
           <mxGeometry x="466.00402733964245" y="250" width="8" height="8" as="geometry">
             <mxPoint x="-24" y="20" as="offset" />
@@ -1451,11 +1446,20 @@
             <mxPoint x="-20" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="Md4w4aiZd-Vq1C-1224e-0" value="Search" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;fillColor=#0085FC;strokeColor=none;fontColor=#FFFFFF;fontSize=14;" vertex="1" parent="3fjIFF_94ipeUnSv15aS-127">
+          <mxGeometry x="359" y="430" width="91" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Md4w4aiZd-Vq1C-1224e-1" value="Cancel" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;fillColor=#6C757D;strokeColor=none;fontColor=#FFFFFF;fontSize=14;" vertex="1" parent="3fjIFF_94ipeUnSv15aS-127">
+          <mxGeometry x="270" y="430" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Md4w4aiZd-Vq1C-1224e-2" value="" style="shape=line;strokeColor=#dddddd;resizeWidth=1;" vertex="1" parent="3fjIFF_94ipeUnSv15aS-127">
+          <mxGeometry x="0.004027339642483696" y="35.852206119162815" width="460" height="18.14814814814815" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="k7RsStOxirRy06R_LlCp" name="Dataset Create - Step 1">
-    <mxGraphModel dx="1025" dy="885" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1666" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="ZF2sBImFiapGZ213oHLY-0" />
         <mxCell id="ZF2sBImFiapGZ213oHLY-1" parent="ZF2sBImFiapGZ213oHLY-0" />
@@ -1610,7 +1614,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Dataset Create - Step 2" id="CsxukxRUBRr59_GbibIW">
-    <mxGraphModel dx="2094" dy="1074" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2873" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="wlCsAAevH5fF_TZx8Fcr-0" />
         <mxCell id="wlCsAAevH5fF_TZx8Fcr-1" parent="wlCsAAevH5fF_TZx8Fcr-0" />
@@ -1769,7 +1773,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Dataset Create - Step 3" id="y9fo2gUkEBbp3-ayYqVB">
-    <mxGraphModel dx="1721" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2266" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="Jb3XLGGqBztJ1r0gl_HX-0" />
         <mxCell id="Jb3XLGGqBztJ1r0gl_HX-1" parent="Jb3XLGGqBztJ1r0gl_HX-0" />
