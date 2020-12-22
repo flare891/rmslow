@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-22T17:03:16.575Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="GFW1TSvA6xz1Zl9QqNZv" version="14.0.1" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2020-12-22T17:14:11.126Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="8WMz29KwgAjaX0N8pUyk" version="14.0.1" type="github" pages="5">
   <diagram id="Yn146CHNmKTiM8TK_1wL" name="IMA Process">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -563,6 +563,9 @@
       <root>
         <mxCell id="sEgGQrpbK4zRc7EJWFdz-0" />
         <mxCell id="sEgGQrpbK4zRc7EJWFdz-1" parent="sEgGQrpbK4zRc7EJWFdz-0" />
+        <mxCell id="sEgGQrpbK4zRc7EJWFdz-2" value="Dataset Review&lt;br&gt;1.&amp;nbsp; Dataset is created&lt;br&gt;2.&amp;nbsp; Dataset is discovered in dataset module&lt;br&gt;3.&amp;nbsp; Dataset is triaged&lt;br&gt;4.&amp;nbsp; Dataset is assigned to an IMO for review.&lt;br&gt;5.&amp;nbsp; IMO reviews the dataset.&amp;nbsp; &lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;a.&amp;nbsp; Contacts the data steward&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;b.&amp;nbsp; Obtains additional information about the dataset&lt;br&gt;6.&amp;nbsp; IMO determines the following:&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;a.&amp;nbsp; RCS Value(s)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;b.&amp;nbsp; PII Status&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; i.&amp;nbsp; &amp;nbsp; PII Type&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ii.&amp;nbsp; &amp;nbsp;SORN Number&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; iii.&amp;nbsp; Handling Instruction" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="sEgGQrpbK4zRc7EJWFdz-1">
+          <mxGeometry x="480" y="40" width="320" height="650" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
