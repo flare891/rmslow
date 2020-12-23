@@ -8,7 +8,7 @@ The P&L service consists of the following components:
 - The P&L service SDK
 - The P&L service UI
 
-#Components
+# Components
 
 ## Datastore
 A P&L service holds the complete lineage of an object but does not store the actual metadata. The datastore hosted on **TBD**
