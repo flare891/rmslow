@@ -1,21 +1,146 @@
-<mxfile host="app.diagrams.net" modified="2020-12-23T15:04:51.676Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="MXIEJ5fMoD3PJtHc5vjy" version="14.1.1" type="github">
-  <diagram id="gw-nH7AqX0yCH5nJFknN" name="P&amp;L Object Graph">
-    <mxGraphModel dx="1718" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2020-12-23T15:54:26.701Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="WcjxroaXQvimCWKKjPCI" version="14.1.1" type="github" pages="2">
+  <diagram id="gw-nH7AqX0yCH5nJFknN" name="P&amp;L Object Graph v1">
+    <mxGraphModel dx="2062" dy="1122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="e1uVuimV80QoNoGUXBjF-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="60" y="220" width="880" height="390" as="geometry" />
+        <mxCell id="7uuyctCdXWxSft7hEXyN-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8F9FA;" vertex="1" parent="1">
+          <mxGeometry y="81" width="814" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="e1uVuimV80QoNoGUXBjF-1" value="&lt;br&gt;eventDateTime: 2020-01-01T00:00:00&lt;br&gt;eventType: OBJECT_CREATE&lt;br&gt;eventNote: Object uploaded to EVA workspace 12345" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="230" width="410" height="170" as="geometry" />
+        <mxCell id="7uuyctCdXWxSft7hEXyN-1" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#F8F9FA;" vertex="1" parent="1">
+          <mxGeometry y="81" width="1100" height="769" as="geometry" />
         </mxCell>
-        <mxCell id="e1uVuimV80QoNoGUXBjF-3" value="System: Eva&lt;br&gt;System GUIDE: 111-111-111" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="60" y="220" width="230" height="30" as="geometry" />
+        <mxCell id="e1uVuimV80QoNoGUXBjF-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="1" y="110" width="2909" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="e1uVuimV80QoNoGUXBjF-4" value="Pedigree &amp;amp; Lineage&lt;br&gt;guide://1234-1234-1234" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="60" y="80" width="150" height="50" as="geometry" />
+        <mxCell id="e1uVuimV80QoNoGUXBjF-4" value="Current Object: guide://1234-1234-1234" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry y="81" width="1100" height="29" as="geometry" />
         </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#3333FF;" vertex="1" parent="1">
+          <mxGeometry y="20" width="1100" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-6" value="&lt;font style=&quot;font-size: 14px&quot;&gt;FEEDBACK&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF8000;strokeColor=#FF8000;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="970" y="27.5" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-7" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/social-media-2125/78/bell-128.png;strokeColor=#FF8000;fillColor=#FF8000;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="920" y="28.5" width="37" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-8" value="" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=12;shadow=0;sketch=0;fontSize=20;fontColor=#808080;fillColor=#FF8000;strokeColor=#FF8000;" vertex="1" parent="1">
+          <mxGeometry x="10" y="26.5" width="56" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-9" value="Pedigree &amp;amp; Lineage" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;sketch=0;fontSize=20;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="76" y="40" width="214" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-10" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;sketch=0;fontSize=20;fontColor=#FFFFFF;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="780" y="35.5" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-11" value="John Doe" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;sketch=0;fontSize=19;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="814" y="40.5" width="94" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-47" value="&amp;lt;Classification Here&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;sketch=0;fontSize=12;align=center;fillColor=#FFFF33;" vertex="1" parent="1">
+          <mxGeometry width="1100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="e1uVuimV80QoNoGUXBjF-1" value="eventDateTime: 2020-01-01T00:00:00&lt;br&gt;eventType: OBJECT_CREATE&lt;br&gt;eventNote: Object uploaded to EVA workspace 12345&lt;br&gt;eventCN: kimmela.users.place&lt;br&gt;cn:iservices.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="2" y="160" width="370" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e1uVuimV80QoNoGUXBjF-3" value="System: Eva&lt;br&gt;System GUIDE: 111-111-111" style="text;html=1;fillColor=#f5f5f5;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=#666666;strokeWidth=1;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry y="110" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-126" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1" y="350" width="2909" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-127" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1" y="530" width="2909" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-128" value="System: IDL&lt;br&gt;System GUIDE: 222-222-222" style="text;html=1;fillColor=#f5f5f5;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=#666666;strokeWidth=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="2" y="350" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-129" value="System: RMM&lt;br&gt;System GUIDE: 333-333-333" style="text;html=1;fillColor=#f5f5f5;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=#666666;strokeWidth=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1" y="530" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-130" value="eventDateTime: 2020-01-01T00:10:00&lt;br&gt;eventType: OBJECT_CREATE&lt;br&gt;eventNote: Metadata altered&lt;br&gt;eventCN: kimmela.users.place&lt;br&gt;cn:iservices.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="160" width="390" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-131" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="e1uVuimV80QoNoGUXBjF-1" target="7uuyctCdXWxSft7hEXyN-130">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="450" as="sourcePoint" />
+            <mxPoint x="830" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-132" value="eventDateTime: 2020-01-01T00:15:00&lt;br&gt;eventType: OBJECT_CLONE&lt;br&gt;eventNote: Object placed into IDL LZ&lt;br&gt;eventCN: iservices.place&lt;br&gt;cn:iservices.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="743.5" y="390" width="390" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-133" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.479;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7uuyctCdXWxSft7hEXyN-130" target="7uuyctCdXWxSft7hEXyN-132">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="310" as="sourcePoint" />
+            <mxPoint x="660" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-134" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry y="820" width="1100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-135" value="eventDateTime: 2020-01-01T00:19:00&lt;br&gt;eventType: OBJECT_DELETE&lt;br&gt;eventNote: Objected purged from EVA&lt;br&gt;eventCN: iservices.place&lt;br&gt;cn:iservices.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1780" y="160" width="390" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-136" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="7uuyctCdXWxSft7hEXyN-130" target="7uuyctCdXWxSft7hEXyN-135">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="850" y="330" as="sourcePoint" />
+            <mxPoint x="900" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-137" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="830" width="62" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="7uuyctCdXWxSft7hEXyN-138" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;flipH=1;notch=0;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="830" width="70" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="YLCD8irVW3s0nrWlDEmW-3" value="Scrolls&amp;nbsp; horizontally as needed&lt;br&gt;Zoom in/out with mouse wheel" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="770" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YLCD8irVW3s0nrWlDEmW-4" value="eventDateTime: 2020-01-01T00:18:00&lt;br&gt;eventType: METADATA_UPDATE&lt;br&gt;eventNote: Object processed through pipeline. Available in IDL&lt;br&gt;eventCN: idl.place&lt;br&gt;cn: idl.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="390" width="430" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YLCD8irVW3s0nrWlDEmW-6" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7uuyctCdXWxSft7hEXyN-132" target="YLCD8irVW3s0nrWlDEmW-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2260" y="480" as="sourcePoint" />
+            <mxPoint x="2310" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YLCD8irVW3s0nrWlDEmW-7" value="eventDateTime: 2020-01-01T00:19:00&lt;br&gt;eventType: METADATA_UPDATE&lt;br&gt;eventNote: Object given a disposition date&lt;br&gt;eventCN: iservices.place&lt;br&gt;cn:iservices.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1780" y="575" width="390" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YLCD8irVW3s0nrWlDEmW-8" value="eventDateTime: 2070-01-01T00:00:00&lt;br&gt;eventType: OBJECT_DELETE&lt;br&gt;eventNote: Object dispositioned&lt;br&gt;eventCN: idl.place&lt;br&gt;cn: idl.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="2280" y="390" width="390" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YLCD8irVW3s0nrWlDEmW-9" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YLCD8irVW3s0nrWlDEmW-4" target="YLCD8irVW3s0nrWlDEmW-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1750" y="470" as="sourcePoint" />
+            <mxPoint x="1800" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YLCD8irVW3s0nrWlDEmW-10" value="eventDateTime: 2070-01-01T00:01:00&lt;br&gt;eventType: METADATA_UPDATE&lt;br&gt;eventNote: Object confirmed dispositioned&lt;br&gt;eventCN: iservices.place&lt;br&gt;cn:iservices.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="2300" y="575" width="390" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YLCD8irVW3s0nrWlDEmW-11" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YLCD8irVW3s0nrWlDEmW-7" target="YLCD8irVW3s0nrWlDEmW-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2210" y="640" as="sourcePoint" />
+            <mxPoint x="2260" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YLCD8irVW3s0nrWlDEmW-13" value="" style="endArrow=none;dashed=1;html=1;fillColor=#f8cecc;strokeColor=#b85450;jumpSize=6;endSize=6;strokeWidth=4;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2260" y="800" as="sourcePoint" />
+            <mxPoint x="2270" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="0S-s5jfW5r994tFWpWN-" name="P&amp;L Object Graph v2">
+    <mxGraphModel dx="2062" dy="1122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="e8TOH1R6l0VZHEpr9sID-0" />
+        <mxCell id="e8TOH1R6l0VZHEpr9sID-1" parent="e8TOH1R6l0VZHEpr9sID-0" />
       </root>
     </mxGraphModel>
   </diagram>
