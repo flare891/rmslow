@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-23T15:54:26.701Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="WcjxroaXQvimCWKKjPCI" version="14.1.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-12-23T16:01:36.372Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="oUuHbR2UoNSfjBrMjWMM" version="14.1.1" type="github" pages="2">
   <diagram id="gw-nH7AqX0yCH5nJFknN" name="P&amp;L Object Graph v1">
     <mxGraphModel dx="2062" dy="1122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -58,7 +58,7 @@
         <mxCell id="7uuyctCdXWxSft7hEXyN-129" value="System: RMM&lt;br&gt;System GUIDE: 333-333-333" style="text;html=1;fillColor=#f5f5f5;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=#666666;strokeWidth=1;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="1" y="530" width="250" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="7uuyctCdXWxSft7hEXyN-130" value="eventDateTime: 2020-01-01T00:10:00&lt;br&gt;eventType: OBJECT_CREATE&lt;br&gt;eventNote: Metadata altered&lt;br&gt;eventCN: kimmela.users.place&lt;br&gt;cn:iservices.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+        <mxCell id="7uuyctCdXWxSft7hEXyN-130" value="eventDateTime: 2020-01-01T00:10:00&lt;br&gt;eventType: OBJECT_METADATA&lt;br&gt;eventNote: Workspace metadata altered&lt;br&gt;eventCN: kimmela.users.place&lt;br&gt;cn:iservices.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
           <mxGeometry x="440" y="160" width="390" height="90" as="geometry" />
         </mxCell>
         <mxCell id="7uuyctCdXWxSft7hEXyN-131" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="e1uVuimV80QoNoGUXBjF-1" target="7uuyctCdXWxSft7hEXyN-130">
@@ -97,7 +97,7 @@
         <mxCell id="YLCD8irVW3s0nrWlDEmW-3" value="Scrolls&amp;nbsp; horizontally as needed&lt;br&gt;Zoom in/out with mouse wheel" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1180" y="770" width="320" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="YLCD8irVW3s0nrWlDEmW-4" value="eventDateTime: 2020-01-01T00:18:00&lt;br&gt;eventType: METADATA_UPDATE&lt;br&gt;eventNote: Object processed through pipeline. Available in IDL&lt;br&gt;eventCN: idl.place&lt;br&gt;cn: idl.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+        <mxCell id="YLCD8irVW3s0nrWlDEmW-4" value="eventDateTime: 2020-01-01T00:18:00&lt;br&gt;eventType: METADATA_ADD&lt;br&gt;eventNote: Object processed through pipeline. Available in IDL&lt;br&gt;eventCN: idl.place&lt;br&gt;cn: idl.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
           <mxGeometry x="1180" y="390" width="430" height="90" as="geometry" />
         </mxCell>
         <mxCell id="YLCD8irVW3s0nrWlDEmW-6" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7uuyctCdXWxSft7hEXyN-132" target="YLCD8irVW3s0nrWlDEmW-4">
@@ -106,7 +106,7 @@
             <mxPoint x="2310" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="YLCD8irVW3s0nrWlDEmW-7" value="eventDateTime: 2020-01-01T00:19:00&lt;br&gt;eventType: METADATA_UPDATE&lt;br&gt;eventNote: Object given a disposition date&lt;br&gt;eventCN: iservices.place&lt;br&gt;cn:iservices.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+        <mxCell id="YLCD8irVW3s0nrWlDEmW-7" value="eventDateTime: 2020-01-01T00:19:00&lt;br&gt;eventType: OBJECT_METADATA&lt;br&gt;eventNote: Object given a disposition date&lt;br&gt;eventCN: iservices.place&lt;br&gt;cn:iservices.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
           <mxGeometry x="1780" y="575" width="390" height="90" as="geometry" />
         </mxCell>
         <mxCell id="YLCD8irVW3s0nrWlDEmW-8" value="eventDateTime: 2070-01-01T00:00:00&lt;br&gt;eventType: OBJECT_DELETE&lt;br&gt;eventNote: Object dispositioned&lt;br&gt;eventCN: idl.place&lt;br&gt;cn: idl.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
@@ -118,7 +118,7 @@
             <mxPoint x="1800" y="420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="YLCD8irVW3s0nrWlDEmW-10" value="eventDateTime: 2070-01-01T00:01:00&lt;br&gt;eventType: METADATA_UPDATE&lt;br&gt;eventNote: Object confirmed dispositioned&lt;br&gt;eventCN: iservices.place&lt;br&gt;cn:iservices.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
+        <mxCell id="YLCD8irVW3s0nrWlDEmW-10" value="eventDateTime: 2070-01-01T00:01:00&lt;br&gt;eventType: OBJECT_METADATA&lt;br&gt;eventNote: Object confirmed dispositioned&lt;br&gt;eventCN: iservices.place&lt;br&gt;cn:iservices.place" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=#000000;strokeWidth=1;" vertex="1" parent="1">
           <mxGeometry x="2300" y="575" width="390" height="90" as="geometry" />
         </mxCell>
         <mxCell id="YLCD8irVW3s0nrWlDEmW-11" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YLCD8irVW3s0nrWlDEmW-7" target="YLCD8irVW3s0nrWlDEmW-10">
