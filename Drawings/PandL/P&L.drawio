@@ -1,17 +1,20 @@
-<mxfile host="app.diagrams.net" modified="2020-12-23T14:21:45.583Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="uVRK_Ja2HXtueNYHCWDq" version="14.1.1" type="github">
-  <diagram id="gw-nH7AqX0yCH5nJFknN" name="Page-1">
-    <mxGraphModel dx="923" dy="540" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2020-12-23T15:04:51.676Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="MXIEJ5fMoD3PJtHc5vjy" version="14.1.1" type="github">
+  <diagram id="gw-nH7AqX0yCH5nJFknN" name="P&amp;L Object Graph">
+    <mxGraphModel dx="1718" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="JF7cNvPY4lJMrbKKk8RI-1" value="todo" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="260" y="200" width="120" height="60" as="geometry" />
+        <mxCell id="e1uVuimV80QoNoGUXBjF-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="220" width="880" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="clGc3E9C3vQiNXyzmyez-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="200" width="120" height="60" as="geometry" />
+        <mxCell id="e1uVuimV80QoNoGUXBjF-1" value="&lt;br&gt;eventDateTime: 2020-01-01T00:00:00&lt;br&gt;eventType: OBJECT_CREATE&lt;br&gt;eventNote: Object uploaded to EVA workspace 12345" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="230" width="410" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="clGc3E9C3vQiNXyzmyez-2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="390" y="300" width="30" height="60" as="geometry" />
+        <mxCell id="e1uVuimV80QoNoGUXBjF-3" value="System: Eva&lt;br&gt;System GUIDE: 111-111-111" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="220" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e1uVuimV80QoNoGUXBjF-4" value="Pedigree &amp;amp; Lineage&lt;br&gt;guide://1234-1234-1234" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="80" width="150" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
