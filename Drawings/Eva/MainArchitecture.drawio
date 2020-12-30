@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-12-23T15:50:49.159Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="oYCKI4K2tJvlsnhkuBqZ" version="14.0.1" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2020-12-30T12:12:10.321Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="g5F-Yf78N5qMHdVzflbu" version="14.1.4" type="github" pages="5">
   <diagram id="elw99k3kC3_1Q8jx1iOW" name="Eva 2.0 High Level">
-    <mxGraphModel dx="2770" dy="1670" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="0" pageScale="1" pageWidth="1400" pageHeight="1700" math="0" shadow="0">
+    <mxGraphModel dx="2462" dy="1522" grid="0" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="0" pageScale="1" pageWidth="1400" pageHeight="1700" math="0" shadow="0">
       <root>
         <mxCell id="8GRn8cEL_pyLPgJIwxRR-0" />
         <mxCell id="8GRn8cEL_pyLPgJIwxRR-1" parent="8GRn8cEL_pyLPgJIwxRR-0" />
@@ -1071,7 +1071,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="6rxUjMsQtcFcToB8YHgT" name="File Service">
-    <mxGraphModel dx="1822" dy="1162" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2462" dy="1522" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="rdWnOtAYXpx5rYpskT7k-0" />
         <mxCell id="rdWnOtAYXpx5rYpskT7k-1" parent="rdWnOtAYXpx5rYpskT7k-0" />
@@ -1176,38 +1176,6 @@
         </mxCell>
         <mxCell id="leShlDSDKemooVHnEtB3-8" value="Eva 2.0 File Service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=40;fontStyle=1" parent="rdWnOtAYXpx5rYpskT7k-1" vertex="1">
           <mxGeometry x="-174" y="-186" width="492" height="20" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="8rHLmkKcIwHi5-Y-ghFE" name="Pedigree&amp;Lineage">
-    <mxGraphModel dx="1422" dy="762" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="_5sVCugpCzim4SjqNzrn-0" />
-        <mxCell id="_5sVCugpCzim4SjqNzrn-1" parent="_5sVCugpCzim4SjqNzrn-0" />
-        <mxCell id="_5sVCugpCzim4SjqNzrn-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=40;fillColor=#FFFF00;verticalAlign=middle;labelPosition=center;verticalLabelPosition=middle;align=center;shadow=1;" parent="_5sVCugpCzim4SjqNzrn-1" vertex="1">
-          <mxGeometry x="209" y="138" width="156" height="65" as="geometry" />
-        </mxCell>
-        <mxCell id="_5sVCugpCzim4SjqNzrn-5" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#FFFF00;fontSize=40;fontColor=#000000;spacing=0;sketch=0;shadow=1;" parent="_5sVCugpCzim4SjqNzrn-1" vertex="1">
-          <mxGeometry x="564" y="123" width="98" height="94" as="geometry" />
-        </mxCell>
-        <mxCell id="WzQnIhOkPxmioWtPodR1-0" value="Pedigree &amp;amp; Lineage Service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" parent="_5sVCugpCzim4SjqNzrn-1" vertex="1">
-          <mxGeometry x="44" y="9" width="271" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="WzQnIhOkPxmioWtPodR1-1" value="P&amp;amp;L Service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#000000;" parent="_5sVCugpCzim4SjqNzrn-1" vertex="1">
-          <mxGeometry x="229.5" y="160.5" width="115" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="WzQnIhOkPxmioWtPodR1-2" value="P&amp;amp;L Storage" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#000000;" parent="_5sVCugpCzim4SjqNzrn-1" vertex="1">
-          <mxGeometry x="555.5" y="171" width="115" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="WzQnIhOkPxmioWtPodR1-3" value="" style="endArrow=classic;html=1;strokeColor=#000000;fontSize=16;fontColor=#000000;" parent="_5sVCugpCzim4SjqNzrn-1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="379" y="175" as="sourcePoint" />
-            <mxPoint x="542" y="175" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="WzQnIhOkPxmioWtPodR1-6" value="&amp;nbsp;&lt;b&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;P&amp;amp;L Service Connections&lt;/font&gt;&lt;/b&gt;:&lt;br&gt;&lt;ul&gt;&lt;li&gt;NiFi&lt;/li&gt;&lt;li&gt;File Service&lt;/li&gt;&lt;li&gt;Catalog Service&lt;/li&gt;&lt;li&gt;EVA API Gateway&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;P&amp;amp;L Service Data:&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;GUIDE ID&lt;/li&gt;&lt;li&gt;Nature of change only, not all of the details&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Object&lt;/li&gt;&lt;li&gt;Metadata&lt;/li&gt;&lt;li&gt;Etc.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Date and time of change&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#000000;" parent="_5sVCugpCzim4SjqNzrn-1" vertex="1">
-          <mxGeometry x="197" y="376" width="288" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
