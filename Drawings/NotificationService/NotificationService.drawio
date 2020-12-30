@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-30T13:20:45.685Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="UHMcm-FxecLEIyipmbT6" version="14.1.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-12-30T15:00:46.466Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="tZ1KV0On4DNiLubN4T8F" version="14.1.4" type="github" pages="2">
   <diagram id="yvoPdxW38xUAE_G0r4dE" name="Info">
     <mxGraphModel dx="2062" dy="1122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -155,6 +155,12 @@
         </mxCell>
         <mxCell id="DFqRTnD5uFk7oRwz69hL-189" value="This a reminder to ping the IDL team.&#xa;&#xa;kimmela@place.org, hoggeb@place.org, devs@place.org&#xa;&#xa;June 11th, 2026 06:00:00&#xa;&#xa;Contact IDL. They said the auto dataset creation would be done today." style="text;whiteSpace=wrap;fontSize=13;spacing=16;spacingTop=-4;resizeWidth=1;resizeHeight=1;fontStyle=0" parent="DFqRTnD5uFk7oRwz69hL-147" vertex="1">
           <mxGeometry x="109.99758620689654" y="98.36065573770492" width="391.95402298850576" height="391.80983606557373" as="geometry" />
+        </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-234" value="Notification History" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=23;fontStyle=0" vertex="1" parent="DFqRTnD5uFk7oRwz69hL-147">
+          <mxGeometry x="9.620000000000005" y="270" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-235" value="No historical notifications." style="text;whiteSpace=wrap;fontSize=13;spacing=16;spacingTop=-4;resizeWidth=1;resizeHeight=1;fontStyle=0" vertex="1" parent="DFqRTnD5uFk7oRwz69hL-147">
+          <mxGeometry x="9.62" y="320" width="480.38" height="80" as="geometry" />
         </mxCell>
         <mxCell id="DFqRTnD5uFk7oRwz69hL-164" value="Notifications" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelPosition=center;verticalLabelPosition=middle;fontSize=16;fontStyle=1;fontColor=#FFFFFF;" parent="o-kv4E1F0-MMt4d27I2c-1" vertex="1">
           <mxGeometry x="7.38" y="210" width="260" height="20" as="geometry" />
@@ -332,7 +338,7 @@
             <mxPoint x="-20" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RJco-PzQ5h2l5MJvPlQd-21" value="Select Date Range" style="rounded=1;fillColor=#F1F2F4;strokeColor=none;html=1;fontColor=#596780;align=left;fontSize=12;spacingLeft=10;shadow=0;sketch=0;" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-14">
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-21" value="Select Historical" style="rounded=1;fillColor=#F1F2F4;strokeColor=none;html=1;fontColor=#596780;align=left;fontSize=12;spacingLeft=10;shadow=0;sketch=0;" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-14">
           <mxGeometry x="16.54676258992806" y="124.25925925925925" width="190.28776978417267" height="26.068376068376068" as="geometry" />
         </mxCell>
         <mxCell id="RJco-PzQ5h2l5MJvPlQd-22" value="" style="shape=triangle;direction=south;fillColor=#596780;strokeColor=none;html=1" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-21">
@@ -431,19 +437,28 @@
         <mxCell id="RJco-PzQ5h2l5MJvPlQd-58" value="" style="dashed=0;html=1;shape=mxgraph.gmdl.plus;strokeColor=#737373;strokeWidth=2;shadow=0;" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-57">
           <mxGeometry x="12" y="12" width="16" height="16" as="geometry" />
         </mxCell>
-        <mxCell id="RJco-PzQ5h2l5MJvPlQd-63" value="&#xa;IDL Reminder Email" style="shape=rect;fillColor=#ffffff;strokeColor=#eeeeee;shadow=1;fontColor=#000000;fontSize=23;fontStyle=0;verticalAlign=top;spacingBottom=0;spacingLeft=16;spacingTop=20;align=left;rounded=0;" vertex="1" parent="o-kv4E1F0-MMt4d27I2c-1">
-          <mxGeometry x="660" y="1090" width="430" height="590" as="geometry" />
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-63" value="&#xa;Skype Reminder For Bryan" style="shape=rect;fillColor=#ffffff;strokeColor=#eeeeee;shadow=1;fontColor=#000000;fontSize=23;fontStyle=0;verticalAlign=top;spacingBottom=0;spacingLeft=16;spacingTop=20;align=left;rounded=0;" vertex="1" parent="o-kv4E1F0-MMt4d27I2c-1">
+          <mxGeometry x="660" y="1090" width="430" height="600" as="geometry" />
         </mxCell>
         <mxCell id="RJco-PzQ5h2l5MJvPlQd-64" value="Description:&#xa;&#xa;Recipient List:&#xa;&#xa;Time:&#xa;&#xa;Message:" style="text;whiteSpace=wrap;fontSize=13;spacing=16;spacingTop=-4;resizeWidth=1;resizeHeight=1;fontStyle=1" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-63">
-          <mxGeometry width="101.63636363636364" height="393.33655737704913" relative="1" as="geometry">
+          <mxGeometry width="130" height="193.22033898305082" relative="1" as="geometry">
             <mxPoint x="5" y="100" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="RJco-PzQ5h2l5MJvPlQd-65" value="&amp;lt;Classification Here&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;sketch=0;fontSize=12;align=center;fillColor=#FFFF33;" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-63">
-          <mxGeometry y="5.464754098360656" width="430" height="21.84934426229508" as="geometry" />
+          <mxGeometry y="5.552542372881356" width="430" height="22.220338983050844" as="geometry" />
         </mxCell>
-        <mxCell id="RJco-PzQ5h2l5MJvPlQd-66" value="This a reminder to ping the IDL team.&#xa;&#xa;kimmela@place.org, hoggeb@place.org, devs@place.org&#xa;&#xa;June 11th, 2026 06:00:00&#xa;&#xa;Contact IDL. They said the auto dataset creation would be done today." style="text;whiteSpace=wrap;fontSize=13;spacing=16;spacingTop=-4;resizeWidth=1;resizeHeight=1;fontStyle=0" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-63">
-          <mxGeometry x="85.99811285266458" y="96.72131147540983" width="306.4367816091954" height="385.2796721311475" as="geometry" />
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-66" value="Send message to Bryan to approve my timecard.&#xa;&#xa;SKYPE: hoggeb@skypeexchange.place.org&#xa;&#xa;December 29th, 2020 06:00:00&#xa;&#xa;Hey Bryan,&#xa;&#xa;Could you approve my timecard please. I want to be paid. Thanks!&#xa;&#xa;" style="text;whiteSpace=wrap;fontSize=13;spacing=16;spacingTop=-4;resizeWidth=1;resizeHeight=1;fontStyle=0" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-63">
+          <mxGeometry x="107.5" y="104.09491525423726" width="312.5" height="190.82033898305082" as="geometry" />
+        </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-231" value="Notification History" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=23;fontStyle=0" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-63">
+          <mxGeometry x="10" y="290" width="270" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-232" value="Status:&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;br style=&quot;font-size: 13px;&quot;&gt;Time:&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/div&gt;Information:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-63">
+          <mxGeometry x="10" y="340" width="100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-233" value="COMPLETED&#xa;&#xa;December 29th, 2020 06:00:15&#xa;&#xa;Message sent to endpoint successfully.&#xa;" style="text;whiteSpace=wrap;fontSize=13;spacing=16;spacingTop=-4;resizeWidth=1;resizeHeight=1;fontStyle=0" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-63">
+          <mxGeometry x="90" y="340.0049152542374" width="312.5" height="190.82033898305082" as="geometry" />
         </mxCell>
         <mxCell id="RJco-PzQ5h2l5MJvPlQd-68" value="" style="shape=ellipse;dashed=0;strokeColor=none;shadow=1;fontSize=13;align=center;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;html=1;aspect=fixed;fillColor=#F8F9FA;" vertex="1" parent="o-kv4E1F0-MMt4d27I2c-1">
           <mxGeometry x="970.25" y="1132.92" width="30" height="30" as="geometry" />
@@ -565,6 +580,15 @@
         <mxCell id="RJco-PzQ5h2l5MJvPlQd-186" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-118">
           <mxGeometry x="241.88" y="91.5" width="30" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-206" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;Dataset Notification&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;align=center;" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-118">
+          <mxGeometry x="277.44" y="30" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-207" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;Dataset Notification&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-118">
+          <mxGeometry x="458.38" y="30" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-209" value="Dataset Notification" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-118">
+          <mxGeometry x="96.5" y="30" width="80" height="20" as="geometry" />
+        </mxCell>
         <mxCell id="RJco-PzQ5h2l5MJvPlQd-126" value="" style="group" vertex="1" connectable="0" parent="o-kv4E1F0-MMt4d27I2c-1">
           <mxGeometry x="10" y="1320" width="634.88" height="90" as="geometry" />
         </mxCell>
@@ -655,7 +679,10 @@
         <mxCell id="RJco-PzQ5h2l5MJvPlQd-200" value="20" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-134">
           <mxGeometry x="61.5" width="30" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="RJco-PzQ5h2l5MJvPlQd-142" value="" style="group" vertex="1" connectable="0" parent="o-kv4E1F0-MMt4d27I2c-1">
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-208" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;Dataset Notification&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-134">
+          <mxGeometry x="186.88" y="30" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-142" value="" style="group;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" connectable="0" parent="o-kv4E1F0-MMt4d27I2c-1">
           <mxGeometry x="10" y="1490" width="634.88" height="90" as="geometry" />
         </mxCell>
         <mxCell id="RJco-PzQ5h2l5MJvPlQd-143" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-142">
@@ -694,6 +721,12 @@
         <mxCell id="RJco-PzQ5h2l5MJvPlQd-203" value="27" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-142">
           <mxGeometry x="61.5" y="-1.5" width="30" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-210" value="EMAIL:kimmela" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-142">
+          <mxGeometry x="368.38" y="30" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-228" value="SKYPE:kimmela" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-142">
+          <mxGeometry x="186.88" y="30" width="80" height="20" as="geometry" />
+        </mxCell>
         <mxCell id="RJco-PzQ5h2l5MJvPlQd-150" value="" style="group" vertex="1" connectable="0" parent="o-kv4E1F0-MMt4d27I2c-1">
           <mxGeometry x="10" y="1580" width="634.88" height="90" as="geometry" />
         </mxCell>
@@ -726,6 +759,23 @@
         </mxCell>
         <mxCell id="RJco-PzQ5h2l5MJvPlQd-161" value="" style="triangle;whiteSpace=wrap;html=1;fontSize=15;rotation=-179;" vertex="1" parent="o-kv4E1F0-MMt4d27I2c-1">
           <mxGeometry x="28" y="1100" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-204" value="Select Date Range" style="rounded=1;fillColor=#F1F2F4;strokeColor=none;html=1;fontColor=#596780;align=left;fontSize=12;spacingLeft=10;shadow=0;sketch=0;" vertex="1" parent="o-kv4E1F0-MMt4d27I2c-1">
+          <mxGeometry x="20.23676258992806" y="399.99925925925925" width="190.28776978417267" height="26.068376068376068" as="geometry" />
+        </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-205" value="" style="shape=triangle;direction=south;fillColor=#596780;strokeColor=none;html=1" vertex="1" parent="RJco-PzQ5h2l5MJvPlQd-204">
+          <mxGeometry x="1" y="0.5" width="12" height="6" relative="1" as="geometry">
+            <mxPoint x="-20" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-211" value="Yellow = Past notifications sent out through the notification&amp;nbsp;service" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="o-kv4E1F0-MMt4d27I2c-1">
+          <mxGeometry x="1160" y="1230" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-226" value="Blue = Recurring / upcoming notifications" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="o-kv4E1F0-MMt4d27I2c-1">
+          <mxGeometry x="1160" y="1320" width="270" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RJco-PzQ5h2l5MJvPlQd-229" value="Green = Selected Notification" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="o-kv4E1F0-MMt4d27I2c-1">
+          <mxGeometry x="1160" y="1410" width="270" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
