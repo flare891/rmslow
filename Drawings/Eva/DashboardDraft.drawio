@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-04T15:49:00.698Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="jg95S10z3LiSW8aQ6urP" version="14.1.1" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2021-01-04T17:14:08.033Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="WF5CdGH0Jj0xhHZ1aMcs" version="14.1.1" type="github" pages="10">
   <diagram id="nulgUZcRM6IO7Wxl4WT8" name="Object Resources">
     <mxGraphModel dx="834" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -5218,10 +5218,22 @@
           <mxGeometry x="10" y="539.9999999999999" width="470" height="30" as="geometry" />
         </mxCell>
         <mxCell id="GsBA_w8JYwEo4tjhw4iY-0" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/hawcons/32/700013-icon-25-one-finger-tap-hold-128.png;fillColor=#495057;fontColor=#000000;" vertex="1" parent="SEyg1ymkDxW8rgifjbYe-1">
-          <mxGeometry x="-258" y="420" width="128" height="128" as="geometry" />
+          <mxGeometry x="-350" y="432" width="128" height="128" as="geometry" />
         </mxCell>
         <mxCell id="GsBA_w8JYwEo4tjhw4iY-1" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/hawcons/32/699456-icon-25-one-finger-tap-hold-128.png;fillColor=#495057;fontColor=#000000;" vertex="1" parent="SEyg1ymkDxW8rgifjbYe-1">
-          <mxGeometry x="-180" y="560" width="128" height="128" as="geometry" />
+          <mxGeometry x="-200" y="425" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="GsBA_w8JYwEo4tjhw4iY-2" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/hawcons-gesture-stroke/32/icon_41_one_finger_tap_hold-128.png;fillColor=#495057;fontColor=#000000;" vertex="1" parent="SEyg1ymkDxW8rgifjbYe-1">
+          <mxGeometry x="-328" y="580" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="GsBA_w8JYwEo4tjhw4iY-3" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/essential-web-3/50/digital-product-service-hand-circuit-128.png;fillColor=#495057;fontColor=#000000;" vertex="1" parent="SEyg1ymkDxW8rgifjbYe-1">
+          <mxGeometry x="-190" y="580" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="GsBA_w8JYwEo4tjhw4iY-4" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/font-awesome/1792/hand-stop-o-128.png;fillColor=#495057;fontColor=#000000;" vertex="1" parent="SEyg1ymkDxW8rgifjbYe-1">
+          <mxGeometry x="-340" y="260" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="GsBA_w8JYwEo4tjhw4iY-5" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/top-search-7/128/_hand_share_aims_request_gesture_palm-128.png;fillColor=#495057;fontColor=#000000;" vertex="1" parent="SEyg1ymkDxW8rgifjbYe-1">
+          <mxGeometry x="-180" y="260" width="128" height="128" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
