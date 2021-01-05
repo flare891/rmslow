@@ -12,9 +12,9 @@ Through the Eva Digization UI a user can select a specific dataset to upload 1-n
 
 Standard Formats are supported
 
-- PDF
-- Image Files (.jpg, .tiff, .bmp_
-- MS Office Files (.doc, .docx, .ppt, .pptx, .xls, .xlsx)
+- PDF (preview supported)
+- Image Files (.jpg, .tiff, .bmp) (preview NOT supported)
+- MS Office Files (.doc, .docx, .ppt, .pptx, .xls, .xlsx) (preview NOT supported)
 
 ### Holding Pen
 
