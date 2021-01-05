@@ -12,8 +12,10 @@ Eva Search contains the following components:
 ## Eva Search UI
 
 Source draw.io
-here: [Draw.io Source] (https://app.diagrams.net/#HRMSLowside%2Frmslow%2Fmaster%2FDrawings%2FEva%2FSearch%2FEva%20Search.drawio)
+here: [Draw.io Source](https://app.diagrams.net/#HRMSLowside%2Frmslow%2Fmaster%2FDrawings%2FNotificationService%2FNotificationService.drawio)
 
 ## Eva Search API
+
+- List endpoints here:
 
 ## Eva Overarching Architecture:
