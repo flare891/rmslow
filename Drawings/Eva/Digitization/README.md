@@ -2,7 +2,7 @@
 
 Eva Digitization allows user to upload files against specific datasets, place files into a holding pen, or allow Eva to route files "automatically" based on predetermined attributes on the files.
 
-## Upload Option
+## Upload Options
 
 ### User Selected Dataset
 
@@ -28,6 +28,9 @@ Auto Eva will route files into a specific dataset based on specific attributes o
 
 - Job + Box + Folder + Sequence
 
+## Reprocess Options
+
+Objects that fail to process, will sit on the reprocessor page waiting for human intervention.  
 
 ## Digitization UI
 
