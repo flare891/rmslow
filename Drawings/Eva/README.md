@@ -2,7 +2,7 @@
 
 ## Components
 
-- Catalog/Dataset View
+- Catalog/Dataset
 - Dashboard
 - Object Search
 - Digitzation
