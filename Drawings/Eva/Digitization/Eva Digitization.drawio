@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-01-07T02:29:46.608Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="qpE3W-pog8GEAmElcaCG" version="14.1.8" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-01-07T15:35:30.860Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="Xo4xptfNDNVBusVZIm5N" version="14.1.8" type="github" pages="5">
   <diagram id="nulgUZcRM6IO7Wxl4WT8" name="Object Resources">
-    <mxGraphModel dx="1233" dy="1112" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1662" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="xkv93dfL5ZNA0a60ZzHi-0" />
         <mxCell id="xkv93dfL5ZNA0a60ZzHi-1" parent="xkv93dfL5ZNA0a60ZzHi-0" />
@@ -437,81 +437,81 @@
     </mxGraphModel>
   </diagram>
   <diagram id="KpbvxCAzStFy-anKuCE8" name="Page flow">
-    <mxGraphModel dx="1233" dy="2812" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1662" dy="2462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="RuPx1UHHEncBN2G26UzA-0" />
         <mxCell id="RuPx1UHHEncBN2G26UzA-1" parent="RuPx1UHHEncBN2G26UzA-0" />
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-0" value="&#39;Manual&#39; Eva" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-0" value="&#39;Manual&#39; Eva" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="503" y="-1494" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-1" value="Bulk Upload" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-1" value="Bulk Upload" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="502" y="-1274.5" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-2" value="Publish to IDL" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-2" value="Publish to IDL" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="502" y="-1201.5" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-3" value="Reprocess Page" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-3" value="Reprocess Page" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="502" y="-1058.5" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-4" value="Digitization Page" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#b85450;gradientColor=#ea6b66;fillColor=#f8cecc;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-4" value="Digitization Page" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#b85450;gradientColor=#ea6b66;fillColor=#f8cecc;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="492" y="-1680" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-5" value="View Status" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-5" value="View Status" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="502" y="-1130" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-6" value="Eva&#39;s Holding Pen" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-6" value="Eva&#39;s Holding Pen" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="358" y="-1494" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-7" value="Edit Metadata" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-7" value="Edit Metadata" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="502" y="-983.5" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-8" value="Reprocess Failed Objects" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-8" value="Reprocess Failed Objects" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="504" y="-913.5" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-9" value="Choose Processing Option" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-9" value="Choose Processing Option" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="502" y="-1565" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-10" value="&#39;Auto&#39; Eva" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-10" value="&#39;Auto&#39; Eva" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="642" y="-1495" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-11" value="Select Dataset" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-11" value="Select Dataset" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="502" y="-1421" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-12" value="Bulk Upload" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-12" value="Bulk Upload" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="638" y="-1347.5" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-13" value="Publish to IDL" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-13" value="Publish to IDL" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="638" y="-1274.5" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-14" value="Reprocess Page" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-14" value="Reprocess Page" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="638" y="-1131.5" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-15" value="View Status" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-15" value="View Status" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="638" y="-1203" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-16" value="Edit Metadata" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-16" value="Edit Metadata" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="638" y="-1056.5" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-17" value="Reprocess Failed Objects" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-17" value="Reprocess Failed Objects" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="640" y="-986.5" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-18" value="Certify Upload" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-18" value="Certify Upload" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="358" y="-1421" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-19" value="Certify Upload" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-19" value="Certify Upload" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="504" y="-1352" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-20" value="Certify Upload" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-20" value="Certify Upload" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="638" y="-1421" width="100" height="43" as="geometry" />
         </mxCell>
-        <mxCell id="oDnZfw5xfhsKCACOhcGE-21" value="Bulk Upload to S3" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="RuPx1UHHEncBN2G26UzA-1">
+        <mxCell id="oDnZfw5xfhsKCACOhcGE-21" value="Bulk Upload to S3" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b85450;fontSize=10;fillColor=#FFFFFF;" parent="RuPx1UHHEncBN2G26UzA-1" vertex="1">
           <mxGeometry x="361" y="-1354" width="100" height="43" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="Gk2GQlJoIHkklekkIzYf" name="Digitization Workflow">
-    <mxGraphModel dx="1233" dy="1112" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1662" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="Ut1kNq3iIMRWoGplQkyB-0" />
         <mxCell id="Ut1kNq3iIMRWoGplQkyB-1" parent="Ut1kNq3iIMRWoGplQkyB-0" />
