@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-07T15:30:07.977Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="cYtyXvapqBG8Lvhenwqz" version="14.1.8" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-01-07T15:32:28.741Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="ikgVFGqtV8kQcfyoISG6" version="14.1.8" type="github" pages="5">
   <diagram id="Hv4MSQO7RJrf4JBUDCrN" name="Page/user flow">
     <mxGraphModel dx="2762" dy="2462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -79,8 +79,32 @@
         <mxCell id="5lXfWyK0SqyRImPgirgY-13" value="Read Datasets" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#82b366;fontSize=10;fillColor=#FFFFFF;" parent="1" vertex="1">
           <mxGeometry x="-1080" y="-1020" width="100" height="43" as="geometry" />
         </mxCell>
+        <mxCell id="uR25qu8aQuJi-jEiliVg-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uR25qu8aQuJi-jEiliVg-1" target="uR25qu8aQuJi-jEiliVg-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uR25qu8aQuJi-jEiliVg-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uR25qu8aQuJi-jEiliVg-1" target="uR25qu8aQuJi-jEiliVg-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uR25qu8aQuJi-jEiliVg-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="uR25qu8aQuJi-jEiliVg-1" target="uR25qu8aQuJi-jEiliVg-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uR25qu8aQuJi-jEiliVg-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uR25qu8aQuJi-jEiliVg-1" target="uR25qu8aQuJi-jEiliVg-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="uR25qu8aQuJi-jEiliVg-1" value="Discover Objects in IDL" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#82b366;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="-532" y="-1030" width="100" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="uR25qu8aQuJi-jEiliVg-3" value="Download Object" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#82b366;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-532" y="-960" width="100" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="uR25qu8aQuJi-jEiliVg-5" value="Send Object to XXX" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#82b366;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-400" y="-960" width="100" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="uR25qu8aQuJi-jEiliVg-7" value="Update Object" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#82b366;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-665" y="-960" width="100" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="uR25qu8aQuJi-jEiliVg-9" value="Delete Objects" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#82b366;fontSize=10;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="-960" width="100" height="43" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
