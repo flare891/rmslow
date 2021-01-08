@@ -32,6 +32,14 @@ Auto Eva will route files into a specific dataset based on specific attributes o
 
 Objects that fail to process, will sit on the reprocessor page waiting for human intervention.  
 
+## Data Store
+
+<insert here>
+  
+
+##  API
+
+<insert here>
 ## Digitization UI
 
 Source draw.io
