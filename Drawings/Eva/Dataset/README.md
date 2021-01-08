@@ -5,6 +5,28 @@
 - Catalog Service
 - Catalog Storage
 
+## Data Store
+
+<insert here>
+  
+## API
+
+### Create
+
+<insert here>
+
+### Read
+
+<insert here>
+
+### Update
+
+<insert here>
+
+### Delete
+
+<insert here>
+
 ## Dataset UI
 
 Source draw.io
