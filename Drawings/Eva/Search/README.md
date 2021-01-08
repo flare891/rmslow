@@ -9,6 +9,11 @@ Eva Search contains the following components:
 
 # Eva Search Components
 
+- Object Storage
+- File Service API
+- Metadata Storage
+- Eva Search UI
+
 ## Eva Search UI
 
 Source draw.io
@@ -18,4 +23,13 @@ here: [Draw.io Source](https://app.diagrams.net/#HRMSLowside%2Frmslow%2Fmaster%2
 
 - List endpoints here:
 
+## Object Storage
+
+
+## Metadata Storage
+
+
 ## Eva Overarching Architecture:
+
+Source draw.io
+here: [Draw.io Source](https://app.diagrams.net/#HRMSLowside%2Frmslow%2Fmaster%2FDrawings%2FEva%2FArchitecture%2FMainArchitecture.drawio)
