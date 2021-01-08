@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-01-07T18:42:37.837Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="swfEK-waD17wd2fnjtZt" version="14.1.8" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-01-08T13:38:18.303Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="it32vgQGl5AoLYix8Yh0" version="14.1.8" type="github" pages="5">
   <diagram id="nulgUZcRM6IO7Wxl4WT8" name="Object Resources">
-    <mxGraphModel dx="1662" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="xkv93dfL5ZNA0a60ZzHi-0" />
         <mxCell id="xkv93dfL5ZNA0a60ZzHi-1" parent="xkv93dfL5ZNA0a60ZzHi-0" />
@@ -515,7 +515,7 @@
       <root>
         <mxCell id="Ut1kNq3iIMRWoGplQkyB-0" />
         <mxCell id="Ut1kNq3iIMRWoGplQkyB-1" parent="Ut1kNq3iIMRWoGplQkyB-0" />
-        <mxCell id="Ut1kNq3iIMRWoGplQkyB-2" value="1.&amp;nbsp; User navigates to the digitization page&lt;br&gt;2.&amp;nbsp; User drags 1-n files onto the page.&lt;br&gt;3.&amp;nbsp; Eva SMART upload modal is displayed, and the user select one of four options&lt;br&gt;3.a&amp;nbsp; Cancel&lt;br&gt;3.b&amp;nbsp; Pick a dataset&lt;br&gt;3.b.1&amp;nbsp; User Searches for/selects a dataset&lt;br&gt;3.b.2&amp;nbsp; With the dataset selected, the user is taken to the acknowledgement&amp;nbsp;section&lt;br&gt;3.c&amp;nbsp; Pick a Holding Pen Folder&lt;br&gt;3.c.1&amp;nbsp; User selects an existing folder&lt;br&gt;3.c.2&amp;nbsp; User creates a new folder&lt;br&gt;3.c.3&amp;nbsp; Data is uploaded into a folder&lt;br&gt;3.c.4&amp;nbsp; Bucket retention policy is set&lt;br&gt;3.c.5&amp;nbsp; Bucket is interrogated every XX days&lt;br&gt;3.c.6&amp;nbsp; Eva Dashboard is updated showing pending Holding Pen Actions.&amp;nbsp;&amp;nbsp;&lt;br&gt;3.c.7&amp;nbsp; User takes action on Holding Pen files.&lt;br&gt;3.d&amp;nbsp; Let Eva do the work.&amp;nbsp;&amp;nbsp;&lt;br&gt;3.d.1&amp;nbsp; Files are transferred to a landing zone&lt;br&gt;3.d.2&amp;nbsp; Files are interogated for the dataset matching metadata&lt;br&gt;4.&amp;nbsp; Files are updated with the appropriate metadata&lt;br&gt;5.&amp;nbsp; Files are placed into IDL Landing Zone&lt;br&gt;6.&amp;nbsp;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="Ut1kNq3iIMRWoGplQkyB-1" vertex="1">
+        <mxCell id="Ut1kNq3iIMRWoGplQkyB-2" value="1.&amp;nbsp; User navigates to the digitization page&lt;br&gt;2.&amp;nbsp; User drags 1-n files onto the page.&lt;br&gt;3.&amp;nbsp; Eva Smart upload modal is displayed, and the user select one of four options&lt;br&gt;3.a&amp;nbsp; Cancel&lt;br&gt;3.b&amp;nbsp; Pick a dataset&lt;br&gt;3.b.1&amp;nbsp; User Searches for/selects a dataset&lt;br&gt;3.b.2&amp;nbsp; With the dataset selected, the user is taken to the acknowledgement&amp;nbsp;section&lt;br&gt;3.c&amp;nbsp; Pick a Holding Pen Folder&lt;br&gt;3.c.1&amp;nbsp; User selects an existing folder&lt;br&gt;3.c.2&amp;nbsp; User creates a new folder&lt;br&gt;3.c.3&amp;nbsp; Data is uploaded into a folder&lt;br&gt;3.c.4&amp;nbsp; Bucket retention policy is set&lt;br&gt;3.c.5&amp;nbsp; Bucket is interrogated every XX days&lt;br&gt;3.c.6&amp;nbsp; Eva Dashboard is updated showing pending Holding Pen Actions.&amp;nbsp;&amp;nbsp;&lt;br&gt;3.c.7&amp;nbsp; User takes action on Holding Pen files.&lt;br&gt;3.d&amp;nbsp; Let Eva do the work.&amp;nbsp;&amp;nbsp;&lt;br&gt;3.d.1&amp;nbsp; Files are transferred to a landing zone&lt;br&gt;3.d.2&amp;nbsp; Files are interogated for the dataset matching metadata&lt;br&gt;4.&amp;nbsp; Files are updated with the appropriate metadata&lt;br&gt;5.&amp;nbsp; Files are placed into IDL Landing Zone&lt;br&gt;6.&amp;nbsp;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="Ut1kNq3iIMRWoGplQkyB-1" vertex="1">
           <mxGeometry x="560" y="41" width="480" height="480" as="geometry" />
         </mxCell>
         <mxCell id="WrZMF_f2UJwBAKIdqZ60-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;align=center;" parent="Ut1kNq3iIMRWoGplQkyB-1" source="WrZMF_f2UJwBAKIdqZ60-1" target="WrZMF_f2UJwBAKIdqZ60-3" edge="1">
@@ -660,7 +660,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="gcw-Up9msW1DDbZWgQ9p" name="Digitization">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1673" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="IsJ_MTZ3b37aoJfhhxWW-0" />
         <mxCell id="IsJ_MTZ3b37aoJfhhxWW-1" parent="IsJ_MTZ3b37aoJfhhxWW-0" />
@@ -1429,7 +1429,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="HSI4RDXepnZmiy3H8vmF" name="Digitization/holding pen">
-    <mxGraphModel dx="1662" dy="-88" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="-88" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="3AvB2vERW7-ND82bwLwe-0" />
         <mxCell id="3AvB2vERW7-ND82bwLwe-1" parent="3AvB2vERW7-ND82bwLwe-0" />
