@@ -4,9 +4,11 @@ Eva Search will allow authorized users to search for files stored in IDL, the fu
 
 # Eva Search Components
 
-- Object Storage
 - File Service API
+- Object Storage
 - Metadata Storage
+- Catalog Service API
+- Catalog Storage
 - Eva Search UI
 
 ## Eva Search UI
@@ -29,7 +31,7 @@ RequestType = GET
 PathParameter = {query}
 ```
 * Sends the raw ICQL query to the Catalog Service; translation of the query occurs there, based on whether the query is going to our own store or an external one.
-* The respective queries are run against both our own Catalog store, and an external Customer Catalog store.
+* The respective queries are run against both our own Catalog store, and an external Customer Catalog store. (Should probably break these out into a separate section for Catalog Service)
 * Results are returned with both a status and a record array.
 
 ### Search Index
@@ -41,7 +43,7 @@ PathParameter = {query}
 * Query is translated from ICQL if necessary, then sent to an external Indexing service. 
 * Results are returned with both a status and a record array.
 
-### Search Metadata Store
+### Search Metadata
 ```
 ngimws/search/file/metadata
 RequestType = GET
@@ -50,7 +52,7 @@ PathParameter = {query}
 * Query is translated from ICQL to SQL, then sent to the File Service.
 * Results are returned with both a status and a record array.
 
-### Search Object Store
+### Search Objects
 ```
 ngimws/search/file/object
 RequestType = GET
@@ -58,6 +60,19 @@ PathParameter = {query}
 ```
 * Query is translated from ICQL, then sent to the File Service.
 * Results are returned with both a status and a record array.
+
+
+### File Service API
+* CRUD Operations
+* search Objects (endpoint for Search Service to call)
+* search Metadata (endpoint for Search Service to call)
+### Object Store
+### Metadata Store
+
+### Catalog Service API
+* CRUD Operations
+* search Catalog (endpoint for Search; runs two searches - one against our own store, and sends one to external Customer Catalog Service)
+### Catalog Store
 
 ## Eva Overarching Architecture:
 
