@@ -7,8 +7,6 @@ Eva Search will allow authorized users to search for files stored in IDL, the fu
 - File Service API
 - Object Storage
 - Metadata Storage
-- Catalog Service API
-- Catalog Storage
 - Eva Search UI
 
 ## Eva Search UI
@@ -31,7 +29,7 @@ RequestType = GET
 PathParameter = {query}
 ```
 * Sends the raw ICQL query to the Catalog Service; translation of the query occurs there, based on whether the query is going to our own store or an external one.
-* The respective queries are run against both our own Catalog store, and an external Customer Catalog store. (Should probably break these out into a separate section for Catalog Service)
+* The respective queries are run against both our own Catalog store, and an external Customer Catalog store.
 * Results are returned with both a status and a record array.
 
 ### Search Index
@@ -69,7 +67,7 @@ PathParameter = {query}
 ### Object Store
 ### Metadata Store
 
-### Catalog Service API
+### Catalog Service API (Note: this has its own page, perhaps remove this section)
 * CRUD Operations
 * search Catalog (endpoint for Search; runs two searches - one against our own store, and sends one to external Customer Catalog Service)
 ### Catalog Store
