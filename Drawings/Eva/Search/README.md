@@ -23,39 +23,19 @@ The following information will be stored:
 #### Metadata
 ```json5
 {
-  uuid: "a unique id",
   guide: "guide",
   classification: "",
   title: "",
   description: "",
-  originating_org: "",
-  data_steward: "",
   location: "",
   format: "",
-  data_classification: "",
-  rcs_values: ["", "", ... ],
-  pii: "Yes/No",
-  pii_type: "",
-  system_of_record: "",
-  assigned_imo: "",
-  is_physical: "switch that tells if the document is currently only in physical form",
-  on_hold: "switch for placing a document on hold", //perhaps unnecessary, just null out hold_type?
-  hold_type: "",
-  hold_case_number: "",
-  hold_requesting_org: "",
-  hold_justification: "",
-  hold_supervisor: ""
+  pii: "",
+  system_of_record: ""
 }
 ```
 
 #### File Object
-```json5
-{
-  uuid: "a unique id for the object",
-  guide: "guide",
-  binary: "file blob"
-}
-```
+The raw file is stored in S3.
 
 ## Eva File API
 The File web service will be written in Java and hosted inside a EC2 Apache Tomcat instance.
@@ -85,22 +65,6 @@ RequestType = UPDATE
 RequestBody = Metadata POJO
 ```
 * Updates a existing file's metadata
-
-### Add Hold
-```
-ngim/file/hold/{guide}
-RequestType = UPDATE
-RequestParam = {guide}
-```
-* Add hold information to a file
-
-### Remove Hold
-```
-ngim/file/hold/{guide}
-RequestType = DELETE
-RequestParam = {guide}
-```
-* Removes hold information from file
 
 ### Delete File by Guide
 ```
