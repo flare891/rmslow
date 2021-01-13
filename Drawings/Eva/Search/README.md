@@ -35,7 +35,7 @@ The following information will be stored:
 ```
 
 #### File Object
-The raw file is stored in S3.
+The raw file is stored in S3, alongside its guide #.
 
 ## Eva File API
 The File web service will be written in Java and hosted inside a EC2 Apache Tomcat instance.
