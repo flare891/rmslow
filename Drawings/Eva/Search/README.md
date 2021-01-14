@@ -34,6 +34,12 @@ The following information will be stored:
 }
 ```
 
+Additionally, if we decide that we want some sort of back-reference to a particular holds case #, we can add that as a field here:
+```json5
+hold_case_number: ""
+```
+It would likely just stay blank if no hold was placed on this document.
+
 #### File Object
 The raw file is stored in S3, alongside its guide #.
 
@@ -82,14 +88,13 @@ PathParameter = {query}
 * Query is translated from ICQL, then sent to the File Service.
 * Results are returned with both a status and a record array.
 
-### Search Objects
+### Search Objects by Guide
 ```
-ngimws/search/file/object
+ngimws/search/file/object/{guide}
 RequestType = GET
-PathParameter = {query}
+PathParameter = {guide}
 ```
-* Query is translated from ICQL, then sent to the File Service.
-* Results are returned with both a status and a record array.
+* Searches for object by Guide #
 
 #### other notes
 * what about P&L? I think I need an endpoint here, but what data goes into it? Would it also be stored on the file or elsewhere?
