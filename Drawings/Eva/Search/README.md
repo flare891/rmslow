@@ -79,7 +79,7 @@ RequestType = DELETE
 ```
 * Deletes from object table if exists, then also deletes associated metadata record.
 
-### Search Metadata
+### Search Metadata of Objects
 ```
 ngimws/file/search
 RequestType = GET
