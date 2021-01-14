@@ -18,7 +18,7 @@ here: [Draw.io Source](https://app.diagrams.net/#HRMSLowside%2Frmslow%2Fmaster%2
 
 The File service stores the actual digital object in a table in S3, while the metadata for that file is stored separately in a MySQL table.
 
-The following information will be stored:
+The following information will be stored per File record in the MySQL table:
 
 #### Metadata
 ```json5
