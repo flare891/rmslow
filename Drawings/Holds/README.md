@@ -4,6 +4,7 @@ This is a mechanism for allowing a user to place a hold on one or multiple docum
 
 # Holds Components
 
+- Holds UI
 - Hold datastore
 - Hold service
 
