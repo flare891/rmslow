@@ -26,7 +26,10 @@ The following information will be stored per File record in the MySQL table:
   guide: "guide",
   classification: "",
   title: "",
+  file_name: "",
+  author: "",
   description: "",
+  ocr_text: "",
   location: "",
   format: "",
   pii: "",
@@ -63,6 +66,14 @@ RequestType = GET
 PathParamter = {guide}
 ```
 * Get a specific file from the database
+
+### Get Raw File by Guide
+```
+ngimws/ns/file/raw/{guide}
+RequestType = GET
+PathParamter = {guide}
+```
+* Get the actual raw file stored in S3
 
 ### Update Metadata by Guide
 ```
