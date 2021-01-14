@@ -2,6 +2,7 @@
 
 ## Dataset Components
 
+- Dataset UI
 - Catalog Service
 - Catalog Storage
 
