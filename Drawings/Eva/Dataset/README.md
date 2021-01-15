@@ -18,8 +18,6 @@ The Catalog service stores dataset information in a MySQL table.
   description: "",
   originating_org: "",
   data_steward: "",
-  location: "",
-  format: "",
   data_classification: "",
   rcs_values: ["", "", ... ],
   pii: "",
