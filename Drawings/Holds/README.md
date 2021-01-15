@@ -1,6 +1,6 @@
 # Holds
 
-This is a mechanism for allowing a user to place a hold on one or multiple documents at a time.
+This is a mechanism for allowing a user to place a hold on one or more documents at a time.
 
 # Holds Components
 
@@ -12,15 +12,19 @@ This is a mechanism for allowing a user to place a hold on one or multiple docum
 - Dashboard draw.io
 here: [Draw.io Source](https://app.diagrams.net/?src=about#HRMSLowside%2Frmslow%2Fmaster%2FDrawings%2FHolds%2FHolds.drawio)
 
+## Assumptions
+
+Implementation of this system is based on a few key assumptions in order for this to work:
+
+1. Every document must be registered with Guide, since we track based on guide #.
+2. Systems that deal with documents with holds will always call us to check a document's hold status before attempting to update or delete said document.
+3. (A sort of follow-up to #2) Every system that has a held document has to be able to access our system, to do the check described above.
+
+If we start small, with systems that we know satisfy these assumptions, it'll be fine. But the more systems this holds structure is meant to manage, the more important this set of assumptions becomes.
+
 ## Hold Store
 
-There are two ways this could be accomplished: 
-- Method 1: Hold is placed on a system query, query/queries executed to determine which documents are on hold, separate lookup for held / locked documents
-- Method 2: Hold is placed on the documents themselves
-
-Method 1:
-
-The Hold service stores the hold information tied to a record.
+The Hold service stores the hold information tied to a record. Think of a hold as a dataset, except that instead of noting on the record what dataset it belongs to, we instead note on the dataset (the hold) what records belong to it.
 
 The following information represents a single Hold:
 
@@ -28,19 +32,15 @@ The following information represents a single Hold:
 ```json5
 {
   system: "",
-  queries: [
-    {
-      query: "",
-      enabled: true/false
-    }
-    ...
-  ],
+  notes: "long-form description of systems searched against, queries used, etc.",
   holdCaseNumber: "",
   holdRequestingOrg: "",
   holdJustification: "",
   holdSupervisor: ""
 }
 ```
+
+We wouldn't actually run the queries listed here ourselves; it would be on the user to run those queries and select which documents are on hold.
 
 As for what is stored in the actual database, there are two tables: one that stores the hold case information, then another lookup table for the documents.
 
@@ -49,7 +49,7 @@ As for what is stored in the actual database, there are two tables: one that sto
   id
   case_number
   system_name
-  query
+  notes
   requesting_org
   justification
   supervisor
@@ -57,29 +57,9 @@ As for what is stored in the actual database, there are two tables: one that sto
 
 ### Document Lookup table record:
 ```
-  id
-  case_number (FK)
+  hold_id (FK)
   doc_guide
 ```
-
-Method 2:
-
-Single Hold per document:
-
-#### Metadata
-```json5
-{
-  guide: "",
-  holdType: "",
-  holdCaseNumber: "",
-  holdRequestingOrg: "",
-  holdJustification: "",
-  holdSupervisor: ""
-}
-```
-Other information for the UI can be retrieved from the Dataset data.
-
-All holds are stored in one table in this method, as it is done on a per-document basis.
 
 ## Eva Hold API
 The Hold web service will be written in Java and hosted inside a EC2 Apache Tomcat instance.
@@ -104,15 +84,6 @@ ResponseType = Hold POJO
 ```
 * Get a specific hold from the database
 
-### Get Documents by Hold Case #
-```
-ngimws/hold/docs/{guide}
-RequestType = GET
-PathParamter = {guide}
-ResponseType = ArrayList<File Pojo>
-```
-* Get a specific hold from the database
-
 ### Update Hold by Guide
 ```
 ngimws/hold/{guide}
@@ -130,7 +101,26 @@ RequestType = DELETE
 ResponseType = Response wrapper with status 200/500/etc
 ```
 * Deletes hold from DB
-* Removes all holds from lookup table associated with the given hold #
+* Removes all holds from lookup table associated with that hold
+
+### Get Documents by Hold
+```
+ngimws/hold/docs/{guide}
+RequestType = GET
+PathParamter = {guide}
+ResponseType = ArrayList<File Pojo>
+```
+* Get a list of documents pretaining to a particular hold
+
+### Update Document Holds
+```
+ngimws/hold/docs/{guide}
+RequestType = UPDATE
+PathParamter = {guide}
+RequestBody = ArrayList<String> (of document guides)
+ResponseType = ArrayList<File Pojo>
+```
+* Add list of documents with associated hold to the lookup table
 
 ### Search Holds
 ```
@@ -139,33 +129,8 @@ RequestType = GET
 PathParameter = {query}
 ResponseType = ArrayList<Hold POJO>
 ```
-* returns set of records based on query
+* returns set of holds based on query
 
 ## Drawings
 - Dashboard draw.io
 here: [Draw.io Source](https://app.diagrams.net/?src=about#HRMSLowside%2Frmslow%2Fmaster%2FDrawings%2FHolds%2FHolds.drawio)
-
-----------------------------------------------------------------------------
-
-Additional notes on Method 2:
-
-## Eva Hold API
-The Hold web service will be written in Java and hosted inside a EC2 Apache Tomcat instance.
-The endpoints below will be open to use by systems that have registered their system certificates with the Hold service.
-
-Some small differences here from the above:
-
-### Add Hold (batch)
-```
-ngimws/hold/batch
-RequestType = POST
-RequestBody = ArrayList<Guide # Strings>
-```
-* Adds multiple holds at once
-
-### Delete Hold by Guide
-```
-ngimws/hold/{guide}
-RequestType = DELETE
-```
-* Deletes hold from DB (this should also clear the case number from the record referenced, if we decide to store that on the record)
