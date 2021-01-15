@@ -2,12 +2,6 @@
 
 This is a mechanism for allowing a user to place a hold on one or multiple documents at a time.
 
-There are two ways this could be accomplished: 
-- Method 1: Hold is placed on a system query, query/queries executed to determine which documents are on hold, separate lookup for held / locked documents
-- Method 2: Hold is placed on the documents themselves
-
-Method 1:
-
 # Holds Components
 
 - Holds UI
@@ -19,6 +13,12 @@ Method 1:
 here: [Draw.io Source](https://app.diagrams.net/?src=about#HRMSLowside%2Frmslow%2Fmaster%2FDrawings%2FHolds%2FHolds.drawio)
 
 ## Hold Store
+
+There are two ways this could be accomplished: 
+- Method 1: Hold is placed on a system query, query/queries executed to determine which documents are on hold, separate lookup for held / locked documents
+- Method 2: Hold is placed on the documents themselves
+
+Method 1:
 
 The Hold service stores the hold information tied to a record.
 
@@ -61,6 +61,25 @@ As for what is stored in the actual database, there are two tables: one that sto
   case_number (FK)
   doc_guide
 ```
+
+Method 2:
+
+Single Hold per document:
+
+#### Metadata
+```json5
+{
+  guide: "",
+  holdType: "",
+  holdCaseNumber: "",
+  holdRequestingOrg: "",
+  holdJustification: "",
+  holdSupervisor: ""
+}
+```
+Other information for the UI can be retrieved from the Dataset data.
+
+All holds are stored in one table in this method, as it is done on a per-document basis.
 
 ## Eva Hold API
 The Hold web service will be written in Java and hosted inside a EC2 Apache Tomcat instance.
@@ -128,28 +147,7 @@ here: [Draw.io Source](https://app.diagrams.net/?src=about#HRMSLowside%2Frmslow%
 
 ----------------------------------------------------------------------------
 
-Method 2:
-
-## Hold Store
-
-The Hold service stores the hold information tied to a record.
-
-The following information will be stored as a Hold record in the DB:
-
-#### Metadata
-```json5
-{
-  guide: "",
-  holdType: "",
-  holdCaseNumber: "",
-  holdRequestingOrg: "",
-  holdJustification: "",
-  holdSupervisor: ""
-}
-```
-Other information for the UI can be retrieved from the Dataset data.
-
-All holds are stored in one table in this method, as it is done on a per-document basis.
+Additional notes on Method 2:
 
 ## Eva Hold API
 The Hold web service will be written in Java and hosted inside a EC2 Apache Tomcat instance.
