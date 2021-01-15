@@ -19,11 +19,14 @@ The Catalog service stores dataset information in a MySQL table.
   originating_org: "",
   data_steward: "",
   data_classification: "",
+  locations: ["", ... ],
+  formats: ["", ... ],
   rcs_values: ["", "", ... ],
   pii: "",
   system_of_record: ""
 }
 ```
+The locations and formats listed here are aggregated from the files associated to the dataset.
   
 ## API
 
