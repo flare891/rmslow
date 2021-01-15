@@ -12,7 +12,7 @@ Eva File will allow authorized users to search for files stored in IDL, the futu
 ## Eva File UI
 
 Source draw.io
-here: [Draw.io Source](https://app.diagrams.net/#HRMSLowside%2Frmslow%2Fmaster%2FDrawings%2FEva%2FSearch%2FEva%20Search.drawio)
+here: [Draw.io Source](https://app.diagrams.net/#HRMSLowside%2Frmslow%2Fmaster%2FDrawings%2FEva%2FFile%2FEva%20Search.drawio)
 
 ## Object/Metadata Store
 
